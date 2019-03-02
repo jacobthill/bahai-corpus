@@ -9,13 +9,12 @@ Files are organized by 'author' and then 'original' or 'translation'. They end i
 # Basic Stats
 Category | Word count
 --- | ---
-total tablets of Bahá'u'lláh:  1935
-total tablets of `Abdu'l-Bahá:  21
-total tablets: 1956
-
-total words of of Bahá'u'lláh:  1197121
-total words of `Abdu'l-Bahá:  128901
-total words: 1326022
+total tablets of Bahá'u'lláh:  | 1935
+total tablets of `Abdu'l-Bahá: |  21
+total tablets: | 1956
+total words of of Bahá'u'lláh:  | 1197121
+total words of `Abdu'l-Bahá:  | 128901
+total words: | 1326022
 
 # Contents
-For a detailed list of contents see [contents](https://github.com/jacobthill/bahai-corpus/tree/master/docs/tablets.csv)
+For a detailed list of contents see [contents](https://github.com/jacobthill/bahai-corpus/tree/master/docs/catalog.csv)
