@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>        
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="prayer">
+            <p>
+            سُبْحانَكَ يا إِلهي يَشْهَدُ كُلُّ ذِي بَصَرٍ بِسَلْطَنَتِكَ وَاقْتِدَارِكَ وَكُلُّ ذِي نَظَرٍ بِعَظَمَتِكَ وَاجْتِبارِكَ؛ لا تَمْنَعُ الْمُقَرَّبينَ أَرْياحُ
+            الافْتِتانِ عَنِ التَّوَجُّهِ إِلى أُفُقِ عِزِّكَ. وَلا تَطْرُدُ المُخْلِصِينَ عَواصِفُ الامْتِحانِ عَنِ التَّقَرُّبِ إِلَيْكَ، كأَنَّ فِي قُلُوبِهِمْ أَضاءَ 
+            سِرَاجُ حُبِّكَ وَمِصْباحُ وُدِّكَ.  لا يُقَلِّبُهُمُ البَلايا عَنْ أَمْرِكَ، وَلا القَضَايا عَنْ رِضائِكَ.  أَسْئَلُكَ يا إِلهِي بِهِمْ
+            وَبِالزَّفَراتِ الَّتِيْ تَخْرُجُ مِنْ قُلُوبِهِمْ فِيْ فِراقِكَ، بِأَنْ تَحْفَظَهُمْ مِنْ شَرِّ أَعْدائِكَ، وَتَرْزُقَهُمْ ما قَدَّرْتَه لأَوْلِيائِكَ الَّذِينَ
+            لا خَوْفٌ عَلَيْهِمْ وَلا هُمْ يَحْزَنُونَ.
+            </p>
+         </div>
+         <figure>
+            <graphic url="http://www.tei-c.org/logos/TEI-glow.png"/>
+         </figure>
+      </body>
+  </text>
+</TEI>
