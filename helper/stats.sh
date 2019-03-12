@@ -21,7 +21,6 @@ echo "total tablets: "$total_works
 
 printf "\n"
 
-echo "total words of of Bahá'u'lláh: "$bahaullah_words
 echo "total words of Bahá'u'lláh: "$bahaullah_words
 echo "total words of \`Abdu'l-Bahá: "$abdulbaha_words
 echo "total words: "$total_words
@@ -29,4 +28,4 @@ echo "total words: "$total_words
 printf "\n"
 
 echo "total Persian words: "$total_persian
-echo "total Arabic word: "$total_arabic
+echo "total Arabic words: "$total_arabic
