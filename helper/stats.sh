@@ -17,6 +17,8 @@ total_persian=$((bahaullah_persian + abdulbaha_persian))
 
 printf "\n"
 
+echo "total tablets of Bahá'u'lláh: "$total_bahaullah
+echo "total tablets of \`Abdu'l-Bahá: "$total_abdulbaha
 echo "total tablets: "$total_works
 
 printf "\n"
