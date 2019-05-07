@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listPerson>
+            <person xml:id="person_wgp_jwc_dhb" sex="M">
+               <persName>محمد ابن عبد الله بن عبد المطلب ابن هاشم</persName>
+               <birth when="0571-04-22"> 22 April 571 AD <placeName>
+                     <settlement>مكة</settlement>
+                  </placeName>
+               </birth>
+               <death when="0632-06-08"> 8 June 632 AD <placeName>
+                     <settlement>المدينة المنورة</settlement>
+                  </placeName>
+               </death>
+            </person>
+            <person xml:id="person_y2g_zxc_dhb" sex="M">
+               <persName>عبدالقادر گیلانی</persName>
+            </person>
+         </listPerson>
+      </body>
+  </text>
+</TEI>
