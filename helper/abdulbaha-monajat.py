@@ -1,6 +1,6 @@
 import os, re
 
-in_file = '../abdulbaha-mha3.txt'
+in_file = '../abdulbaha-monajat.txt'
 
 count = 1
 
@@ -16,7 +16,7 @@ ar = [0,2,6,7,8,13,14,15,19,22,23,30,31,32,44,53,56,58,59,60,61,62,63,67,68,
 
 with open(in_file, 'r') as f:
 	content = f.read()
-	x = re.split("\[\d*\]", str(content))
+	x = re.split("\(\d*\)", str(content))
 	x.pop(0)
 	print(len(x))
 
@@ -28,6 +28,6 @@ for i in x:
 	else:
 		language = 'fa'
 	# os.makedirs(os.path.dirname('output'), exist_ok=True)
-	with open('output/abdulbaha-mha3-{}-{}.txt'.format(count, language), 'w') as out_file:
+	with open('output/abdulbaha-monajat-{}-{}.txt'.format(count, language), 'w') as out_file:
 		out_file.write(i)
 		count += 1
