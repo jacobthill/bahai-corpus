@@ -4,7 +4,7 @@
 This repository contains a significant volume of writings from the primary figures of the Bahá'í Faith–Bahá'u'lláh and `Abdu'l-Bahá–and, to a lesser extent, Shoghi Effendi and the Báb. It is intended for computational uses.
 
 # File Organization and Naming Conventions
-Files are organized by 'author' and then 'original' or 'translation'. They end in 'ar.txt' or 'fa.txt' for Arabic and Persian respectively. 
+Files are organized by 'author'. They end in 'ar.txt' or 'fa.txt' for Arabic and Persian respectively. 
 
 # Basic Stats
 Category | Count
