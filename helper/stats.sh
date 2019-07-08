@@ -1,22 +1,22 @@
-cd /Users/jtim/Dropbox/Academic/Sources/bahai-corpus/data/bahaullah/text
+cd /Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/bahaullah/text
 total_bahaullah=$(ls -l *.txt | wc -l)
 bahaullah_words=$(find . -type f -print0 | xargs -0 cat | wc -w)
 bahaullah_arabic=$(find *ar.txt -type f -print0 | xargs -0 cat | wc -w)
 bahaullah_persian=$(find *fa.txt -type f -print0 | xargs -0 cat | wc -w)
 
-cd /Users/jtim/Dropbox/Academic/Sources/bahai-corpus/data/bab/text
+cd /Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/bab/text
 total_bab=$(ls -l *.txt | wc -l)
 bab_words=$(find . -type f -print0 | xargs -0 cat | wc -w)
 bab_arabic=$(find *ar.txt -type f -print0 | xargs -0 cat | wc -w)
 bab_persian=$(find *fa.txt -type f -print0 | xargs -0 cat | wc -w)
 
-cd /Users/jtim/Dropbox/Academic/Sources/bahai-corpus/data/abdulbaha/text
+cd /Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/abdulbaha/text
 total_abdulbaha=$(ls -l *.txt | wc -l)
 abdulbaha_words=$(find . -type f -print0 | xargs -0 cat | wc -w)
 abdulbaha_arabic=$(find *ar.txt -type f -print0 | xargs -0 cat | wc -w)
 abdulbaha_persian=$(find *fa.txt -type f -print0 | xargs -0 cat | wc -w)
 
-cd /Users/jtim/Dropbox/Academic/Sources/bahai-corpus/data/shoghi-effendi/text
+cd /Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/shoghi-effendi/text
 total_shoghi_effendi=$(ls -l *.txt | wc -l)
 shoghi_effendi_words=$(find . -type f -print0 | xargs -0 cat | wc -w)
 shoghi_effendi_arabic=$(find *ar.txt -type f -print0 | xargs -0 cat | wc -w)
@@ -40,7 +40,7 @@ printf "\n"
 echo "total words of Bahá'u'lláh: "$bahaullah_words
 echo "total words of the Báb: "$bab_words
 echo "total words of \`Abdu'l-Bahá: "$abdulbaha_words
-echo "total words of Shoghi Effendi: "shoghi_effendi_words
+echo "total words of Shoghi Effendi: "$shoghi_effendi_words
 echo "total words: "$total_words
 
 printf "\n"

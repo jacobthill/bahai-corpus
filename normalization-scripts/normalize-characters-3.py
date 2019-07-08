@@ -19,6 +19,8 @@ def normalize_carachters(text):
     text = text.replace("\t", " ")
     text = text.replace("(", "")
     text = text.replace(")", "")
+    text = text.replace("﴾", "")
+    text = text.replace("﴿", "")
     text = text.replace('"', '')
     text = text.replace(":", "")
     text = text.replace("[", "")
