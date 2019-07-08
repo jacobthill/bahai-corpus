@@ -17,7 +17,7 @@ total works combined | 6198
 total words of Bahá'u'lláh | 1204691
 total words of the Báb | 34710
 total words of `Abdu'l-Bahá | 1316564
-total words of Shoghi Effendi | shoghi_effendi_words
+total words of Shoghi Effendi | 278595
 total words | 2834560
 total Persian words | 1984255
 total Arabic words | 848559
