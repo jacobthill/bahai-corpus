@@ -1,7 +1,7 @@
 # bahai-corpus-linguistics
 
 # Introduction
-This repository contains a number of texts related to the Bahá'í Faith. The majority of the texts are authored by the Central Figures of the Bahá'í Faith, but significant background texts are included as well–texts from the Islamic and Persian literary traditions that are frequently cited in the Bahá'í writings. It is intended as a dataset for use by computational linguists. All of the texts are in Arabic and/or Persian. They are, for the most part, in the language in which the text was originally written, however, translations from Persian to Arabic are also included (as a rule the Bahá'í writings in Arabic are not translated into Persian). These translations are useful for cross-lingual research.
+This repository contains a significant volume of writings from the primary figures of the Bahá'í Faith–Bahá'u'lláh and `Abdu'l-Bahá–and, to a lesser extent, Shoghi Effendi and the Báb. It is intended for computational uses.
 
 # File Organization and Naming Conventions
 Files are organized by 'author' and then 'original' or 'translation'. They end in 'ar.txt' or 'fa.txt' for Arabic and Persian respectively. 
@@ -9,12 +9,17 @@ Files are organized by 'author' and then 'original' or 'translation'. They end i
 # Basic Stats
 Category | Word count
 --- | ---
-total tablets of Bahá'u'lláh:  | 1935
-total tablets of `Abdu'l-Bahá: |  21
-total tablets: | 1956
-total words of of Bahá'u'lláh:  | 1197121
-total words of `Abdu'l-Bahá:  | 128901
-total words: | 1326022
+total works of Bahá'u'lláh | 1936
+total works of the Báb | 15
+total works of `Abdu'l-Bahá | 4245
+total works of Shoghi Effendi | 2
+total works | 6198
 
-# Contents
-For a detailed list of contents see [contents](https://github.com/jacobthill/bahai-corpus/tree/master/docs/catalog.csv)
+total words of Bahá'u'lláh | 1204691
+total words of the Báb | 34710
+total words of `Abdu'l-Bahá | 1316564
+total words of Shoghi Effendi | shoghi_effendi_words
+total words | 2834560
+
+total Persian words | 1984255
+total Arabic words | 848559
