@@ -23,9 +23,8 @@ for i in x:
 	elif count > 204 and count < 241:
 		language = 'fa'
 	else:
-		lanuguage = 'ar'
-	out_file = open('bahaullah-lh3-{}-{}.txt'.format(count, language), 'w')
+		language = 'ar'
+	out_file = open('output/bahaullah-lh3-{}-{}.txt'.format(count, language), 'w')
 	out_file.write(i)
 	count += 1
 f.close()
-    
