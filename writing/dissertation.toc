@@ -12,14 +12,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}A Range of Linguistic Modes}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Comparative Linguistics}{15}{section.3.4}
+\contentsline {section}{\numberline {3.4}Comparative Linguistics}{16}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusion}{16}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{18}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Word Embeddings}{20}{chapter.4}
+\contentsline {chapter}{\numberline {4}Word Embeddings}{21}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{22}{chapter.5}
+\contentsline {chapter}{Appendices}{23}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{22}{appendix*.11}
+\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{23}{appendix*.11}
