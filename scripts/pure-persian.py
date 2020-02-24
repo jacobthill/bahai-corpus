@@ -1,10 +1,17 @@
 import glob, os
 from collections import Counter
-from helper import process
+from helper import process, build_corpus
 
 # Gather all file names
-os.chdir('/Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/bahaullah/text')
-file_names = glob.glob('*.txt')
+root_dir = '/Users/jtim/Dropbox/Academic/Sources/Corpora/bahai-works/data/'
+authors = ['bahaullah']
+languages = ['ar', 'fa']
+
+file_names = build_corpus(root_dir, authors, languages)
+
+directory = '/Users/jtim/Dropbox/Academic/Research/dissertation/research/output/pure-persian/'
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 def main():
     pure_persian_works = []
@@ -13,7 +20,8 @@ def main():
 
     for name in file_names:
         if 'ar.txt' in name:
-            with open(name, 'r') as f:
+            with open("{}{}".format(root_dir, name), 'r') as f:
+                #### Error, use Counter instead of set? ####
                 words = set(process(f.read()).split())
                 arabic_counter.update(words)
                 arabic_vocabulary.update(words)
@@ -25,17 +33,23 @@ def main():
         elif count <= 2:
             arabic_vocabulary.remove(word)
 
-    for name in file_names:
-        if 'fa.txt' in name:
-            with open(name, 'r') as f:
-                words = set(process(f.read()).split())
-                if len(words - arabic_vocabulary) > len(words) * .70: # if x percent of words not in Arabic vocabulary
-                    print(name)
-                    print("Number of words: {}".format(len(words)))
-                    print("Percent Persian words: {}".format(len(words - arabic_vocabulary) / len(words)))
-                    # print("Words of possible Arabic origin: {}".format(words.intersection(arabic_vocabulary)))
-                    print("-----------------------")
-                    pure_persian_works.append(name)
+    with open("{}pure-persian.txt".format(directory), 'w') as out_file:
+        for name in file_names:
+            if 'fa.txt' in name:
+                with open("{}{}".format(root_dir, name), 'r') as f:
+                    #### Error, use Counter instead of set? ####
+                    words = set(process(f.read()).split())
+                    if len(words - arabic_vocabulary) > len(words) * .70: # if x percent of words not in Arabic vocabulary
+                        out_file.write(name+"\n")
+                        out_file.write("Number of words: {}\n".format(len(words)))
+                        out_file.write("Percent Persian words: {}\n".format(len(words - arabic_vocabulary) / len(words)))
+                        out_file.write("Words of possible Arabic origin: {}\n".format(words.intersection(arabic_vocabulary)))
+                        out_file.write("------------------------------\n\n")
+                        pure_persian_works.append(name)
+
+        out_file.write("Pure Persian Works:\n")
+        for i in pure_persian_works:
+            out_file.write("\t"+"-"+i+"\n")
 
 if __name__ == "__main__":
     main()

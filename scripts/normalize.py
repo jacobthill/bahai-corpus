@@ -1,25 +1,24 @@
 import glob, operator, os, re
 from collections import Counter
+from helper import build_corpus
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn2, venn2_circles
 import numpy as np
 import pandas as pd
 import seaborn as sns
 
-# Gather all file names
-os.chdir('/Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/combined-corpus/')
-file_names = glob.glob('*.txt')
+# # Gather all file names
+corpus_dir = '/Users/jtim/Dropbox/Academic/sources/corpora/bahai-works/data/'
+authors = ['bahaullah', 'bab', 'abdulbaha', 'shoghi-effendi']
+languages = ['ar', 'fa']
+
+file_names = build_corpus(corpus_dir, authors, languages)
 
 # Functions containing the various steps of normalization
 def process_one(text):
     return text
 
 def process_two(text):
-    # replace all diacritics
-    char = 1611
-    for i in range(20):
-        text = text.replace(chr(char), "") # decimal
-        char += 1
     text = text.replace("\n", " ")
     text = text.replace("\t", " ")
     text = text.replace("(", "")
@@ -42,13 +41,20 @@ def process_two(text):
     text = text.replace(chr(8235), "") # right-to-left embedding
     text = text.replace(chr(9), "") # character tabulation
     text = text.replace(chr(42), "") # asterisk
-    text = text.replace(u'\u200c',' ') # half space
-    text = text.replace(u'\u200d',' ') # zero width joiner
+    text = text.replace(u'\u200c', ' ') # half space
+    text = text.replace(u'\u200d', ' ') # zero width joiner
+    text = text.replace(u'\u200f', '') # right-to-left mark
+    text = text.apply(lambda s: s and re.sub('[^\w\s]', '', s)) # any other whitespace, number, etc.
     return text
 
 def process_three(text):
-    # replace all diacritics, remove garbage values, and normalize charcters
     text = process_two(text)
+    # replace all diacritics
+    char = 1611
+    for i in range(20):
+        text = text.replace(chr(char), "") # decimal
+        char += 1
+    # normalize characters
     text = text.replace(chr(1600), "") # tatweel
     text = text.replace(chr(1705), chr(1603)) # kaf
     text = text.replace(chr(1609), chr(1610)) # ya
@@ -76,24 +82,35 @@ def main():
         persian_vocabulary = set()
 
         # Declare color variables
-        blue = '#4682B4'
-        light_blue = '#95C8D8'
+        # light_blue = '#9fbfdf'
+        blue = '#0077b3'
+        # grey = '#d9e6f2'
 
         for name in file_names:
             if 'ar.txt' in name:
                 with open(name, 'r') as f:
+                    #### Error, use Counter instead of set? ####
                     words = set(value[0](f.read()).split(' '))
                     combined_counter.update(words)
                     arabic_counter.update(words)
                     arabic_vocabulary.update(words)
             else:
                 with open(name, 'r') as f:
+                    #### Error, use Counter instead of set? ####
                     words = set(value[0](f.read()).split(' '))
                     combined_counter.update(words)
                     persian_counter.update(words)
                     persian_vocabulary.update(words)
 
-        with open('../../output/combined-{}.txt'.format(value[1]), 'w') as out_file:
+        directory = '/Users/jtim/Dropbox/Academic/research/dissertation/research/output/normalize/'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        figures = '/Users/jtim/Dropbox/Academic/research/dissertation/research/output/figures/'
+        if not os.path.exists(figures):
+            os.makedirs(figures)
+
+        with open('{}combined-{}.txt'.format(directory, value[1]), 'w') as out_file:
             # out_file.write('Processing: Split on white space, no character normalization.\n\n')
             out_file.write('Number of combined words: {}\n\n'.format(sum(combined_counter.values())))
             out_file.write('Total number of combined words: {}\n\n'.format(len(arabic_vocabulary.difference(persian_vocabulary)) + len(persian_vocabulary)))
@@ -103,7 +120,7 @@ def main():
                 out_file.write("{}\n".format(word))
                 out_file.write("Word count: {}{}u{}\n\n".format(count, spaces, chars))
 
-        with open('../../output/arabic-{}.txt'.format(value[1]), 'w') as out_file:
+        with open('{}arabic-{}.txt'.format(directory, value[1]), 'w') as out_file:
             # out_file.write('Processing: Split on white space, no character normalization.\n\n')
             out_file.write('Number of Arabic words: {}\n\n'.format(sum(arabic_counter.values())))
             out_file.write('Total number of arabic words: {}\n\n'.format(len(arabic_vocabulary)))
@@ -113,7 +130,7 @@ def main():
                 out_file.write("{}\n".format(word))
                 out_file.write("Word count: {}{}u{}\n\n".format(count, spaces, chars))
 
-        with open('../../output/persian-{}'.format(value[1]), 'w') as out_file:
+        with open('{}persian-{}'.format(directory, value[1]), 'w') as out_file:
             # out_file.write('Processing: Split on white space, no character normalization.\n\n')
             out_file.write('Number of Persian words: {}\n\n'.format(sum(persian_counter.values())))
             out_file.write('Total number of persian words: {}\n\n'.format(len(persian_vocabulary)))
@@ -133,10 +150,11 @@ def main():
         f, ax = plt.subplots(figsize=(7, 7))
         ax.set(xscale="log", yscale="log")
         sns.regplot("count", "word_rank", df, ax=ax, scatter_kws={"s": 100})
-        plt.savefig('../../output/figures/combined-{}'.format(value[1]))
+        plt.savefig('{}combined-{}'.format(figures, value[1]))
 
+        length_before_min = len(arabic_vocabulary) + len(persian_vocabulary)
         # Create list of minimumally occuring words from full set
-        frequency = [1, 5, 10]
+        frequency = [5]
         for i in frequency: # Iterate through frequency and plot each processing step, frequency threshold
             for word, count in arabic_counter.items():
                 if count < i:
@@ -154,20 +172,24 @@ def main():
                     except:
                         pass
 
+            length_after_min = len(arabic_vocabulary) + len(persian_vocabulary)
+            print("The effect of the minimum frequency threshold on the total vocabulary with {}: {} - {} = {}".format(value, length_before_min, length_after_min, (length_before_min - length_after_min)))
             # Plot Venn diagram for each processing step and each frequecny threshold
             plt.figure(figsize=(6,4))
             v = venn2(subsets = (len(arabic_vocabulary.difference(persian_vocabulary)),
                                  len(persian_vocabulary.difference(arabic_vocabulary)),
                                  len(arabic_vocabulary.intersection(persian_vocabulary))), set_labels = ('Arabic', 'Persian'))
-            v.get_patch_by_id('11').set_alpha(.5) # overlap; third item in venn2 object
-            v.get_patch_by_id('11').set_color(light_blue) # overlap; third item in venn2 object
+            v.get_patch_by_id('11').set_alpha(0.6) # overlap; third item in venn2 object
+            v.get_patch_by_id('100').set_alpha(.5) # left circle; first item in venn2 object
+            v.get_patch_by_id('10').set_alpha(1) # right circle; second item in venn2 object
+            v.get_patch_by_id('11').set_color('white') # overlap; third item in venn2 object
             v.get_patch_by_id('100').set_color('white') # left circle; first item in venn2 object
-            v.get_patch_by_id('010').set_color('white') # right circle; second item in venn2 object
+            v.get_patch_by_id('010').set_color('grey') # right circle; second item in venn2 object
             c = venn2_circles(subsets = (len(arabic_vocabulary.difference(persian_vocabulary)),
                                          len(persian_vocabulary.difference(arabic_vocabulary)),
                                          len(arabic_vocabulary.intersection(persian_vocabulary))), linestyle='solid')
-            plt.title("Venn diagram: process={}, minimum frequency threshold={}".format(value[1], i))
-            plt.savefig('../../output/figures/venn-proc-{}-freq{}.png'.format(value[1], i))
+            # plt.title("Venn diagram: process={}, minimum frequency threshold={}".format(value[1], i))
+            plt.savefig('{}venn-proc-{}-freq{}.png'.format(figures, value[1], i))
 
 if __name__ == "__main__":
     main()
