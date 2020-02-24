@@ -1,0 +1,572 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{noauthor_persian_nodate}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Persian Digital Library by {PersDigUMD}}
+    \verb{url}
+    \verb https://persdigumd.github.io/PDL/
+    \endverb
+    \verb{file}
+    \verb Persian Digital Library by PersDigUMD:/Users/jtim/Zotero/storage/KYDK
+    \verb 23G2/PDL.html:text/html
+    \endverb
+    \field{urlday}{21}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{maxim_romanov_openiti:_2019}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=RM}{%
+         family={Romanov},
+         familyi={R\bibinitperiod},
+         given={Maxim},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Seydi},
+         familyi={S\bibinitperiod},
+         given={Masoumeh},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Zenodo}%
+    }
+    \keyw{Arabic; Classical Arabic; Corpus}
+    \strng{namehash}{RMSM1}
+    \strng{fullhash}{RMSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Co-{PIs}: Matthew Thomas Miller (University of Maryland, College Park),
+  Maxim G. Romanov (University of Vienna), Sarah Bowen Savant (Aga Khan
+  University—{ISMC}, London). Open Islamicate Texts Initiative ({OpenITI},
+  see https://openiti.github.io/) is a multi-institutional effort to construct
+  the first machine-actionable scholarly corpus of premodern Islamicate texts.
+  Led by researchers at the Aga Khan University ({AKU}), University of Vienna
+  ({UV}), Leipzig University ({LU}), and the Roshan Institute for Persian
+  Studies at the University of Maryland (College Park) and an interdisciplinary
+  advisory board of leading digital humanists and Islamic, Persian, and Arabic
+  studies scholars, {OpenITI} aims to provide the essential textual
+  infrastructure in Arabic, Persian and other Islamicate languages for new
+  forms of textual analysis and digital scholarship. In the process, {OpenITI}
+  will enable new synergies between Digital Humanities and the inter-related
+  Islamicate fields of Islamic, Persian, and Arabic Studies. In addition to
+  support from the researchers’ home institutions, it is supported by funding
+  from the European Research Council and the Qatar National Library. Currently,
+  {OpenITI} contains almost exclusively Arabic texts, which were first
+  assembled into a corpus within the {OpenArabic} project, developed first at
+  Tufts University (at The Perseus Project, 2013–2015) and then at Leipzig
+  University (at the Alexander von Humboldt Chair for Digital Humanities,
+  2015–2017)—in both cases with the support and under the patronage of
+  Prof. Gregory Crane. The much more limited number of Persian texts were
+  compiled during 2015-2016 in the Persian Digital Library ({PDL}) pilot (see:
+  https://persdigumd.github.io/{PDL}/) at Roshan Institute for Persian Studies
+  at the University of Maryland. These texts have not been made fully
+  compatible with {OpenITI} {mARkdown} yet and will be made fully available in
+  next releases. Note on Release Numbering: Version 2019.1.1—where 2019 is
+  the year of the release, the first dotted number—.1—is the ordinal
+  release number in 2019, and the second dotted number—.1—is the overall
+  release number; the first dotted number will reset every year, while the
+  second one will continue on increasing. For more details:
+  https://github.com/{OpenITI}/{RELEASE}%
+    }
+    \verb{doi}
+    \verb 10.5281/zenodo.3082464
+    \endverb
+    \field{note}{type: dataset}
+    \field{shorttitle}{{OpenITI}}
+    \field{title}{{OpenITI}: a Machine-Readable Corpus of Islamicate Texts}
+    \verb{url}
+    \verb https://zenodo.org/record/3082464#.XWQ6jpNKh24
+    \endverb
+    \verb{file}
+    \verb Zenodo Snapshot:/Users/jtim/Zotero/storage/BKXACRVH/3082464.html:text
+    \verb /html
+    \endverb
+    \field{day}{20}
+    \field{month}{05}
+    \field{year}{2019}
+    \field{urlday}{26}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{jaf_semi-automatic_2016}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=JS}{%
+         family={Jaf},
+         familyi={J\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Internet, text analysis, Kurdish, ambiguously encoded Arabic-based
+  character identification, ambiguously encoded Arabic-based character
+  unification, Arabic alphabet, Arabic writing system, Dictionaries, encoding,
+  Encoding, Farsi characters, Inspection, Kurdish characters, lexicography,
+  natural language processing, Natural language processing, raw text,
+  resource-scarce languages processing, semiautomatic approach, Sorani, text
+  normalisation stage, Unicode, Unicode values, Web pages, word duplication}
+    \strng{namehash}{JS1}
+    \strng{fullhash}{JS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this study, we outline a potential problem in normalising texts that are
+  based on a modified version of the Arabic alphabet. One of the main resources
+  available for processing resource-scarce languages is raw text collected from
+  the Internet. Many less-resourced languages, such as Kurdish, Farsi, Urdu,
+  Pashtu, etc., use a modified version of the Arabic writing system. Many
+  characters in harvested data from the Internet may have exactly the same form
+  but encoded with different Unicode values (ambiguous characters). The
+  existence of ambiguous characters in words leads to word duplication, thus it
+  is important to identify and unify ambiguous characters during the
+  normalisation stage. Here, we demonstrate cases related to ambiguous Kurdish
+  and Farsi characters and propose a semi-automatic approach to identifying and
+  unifying them.%
+    }
+    \field{booktitle}{2016 International Conference on Asian Language
+  Processing ({IALP})}
+    \verb{doi}
+    \verb 10.1109/IALP.2016.7875974
+    \endverb
+    \field{eventtitle}{2016 International Conference on Asian Language
+  Processing ({IALP})}
+    \field{pages}{228\bibrangedash 231}
+    \field{title}{A semi-automatic approach to identifying and unifying
+  ambiguously encoded Arabic-based characters}
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/Users/jtim/Zotero/storage/6U5V3WUE/78759
+    \verb 74.html:text/html;IEEE Xplore Full Text PDF:/Users/jtim/Zotero/storag
+    \verb e/63BQ8MZ4/Jaf - 2016 - A semi-automatic approach to identifying and
+    \verb unify.pdf:application/pdf
+    \endverb
+    \field{month}{11}
+    \field{year}{2016}
+  \endentry
+
+  \entry{saiedi_gate_2008}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SN}{%
+         family={Saiedi},
+         familyi={S\bibinitperiod},
+         given={Nader},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wilfrid Laurier University Press}%
+    }
+    \keyw{Bāb, ʻAlī Muḥammad Shīrāzī, Babism, Bahai Faith, Sacred
+  books}
+    \strng{namehash}{SN1}
+    \strng{fullhash}{SN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{isbn}{978-1-55458-035-4}
+    \field{pagetotal}{423}
+    \field{series}{Bahá'í studies series}
+    \field{shorttitle}{Gate of the heart}
+    \field{title}{Gate of the heart: understanding the writings of the Báb}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Waterloo, Ont.}%
+    }
+    \verb{file}
+    \verb Saiedi - 2008 - Gate of the heart understanding the writings of t.pdf
+    \verb :/Users/jtim/Zotero/storage/LXEPC2VU/Saiedi - 2008 - Gate of the hear
+    \verb t understanding the writings of t.pdf:application/pdf
+    \endverb
+    \field{year}{2008}
+  \endentry
+
+  \entry{bahaullah_hidden_2002}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Baha'i Publishing}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{191}
+    \field{title}{The Hidden Words}
+    \field{year}{2002}
+  \endentry
+
+  \entry{bahaullah_tabernacle_2006}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Tabernacle of Unity}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/bahaullah/tabernacl
+    \verb e-unity/tabernacle-unity.pdf?e807341d
+    \endverb
+    \verb{file}
+    \verb tabernacle-unity.pdf:/Users/jtim/Zotero/storage/EPMSDC32/tabernacle-u
+    \verb nity.pdf:application/pdf
+    \endverb
+    \field{year}{2006}
+    \field{urlday}{04}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{bahaullah_majmu`ih-i_1920}{book}{}
+    \name{author}{2}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+      {{hash=M}{%
+         family={{Muhyi'd-Din Sabri Kurdi Sanandaji Kanimishkani}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Matba`at as-Sa`adah}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Majmu`ih-'i Matbu`ih ("Collected Tablets of Bahá'u'lláh")}
+    \list{location}{1}{%
+      {Cairo}%
+    }
+    \field{year}{1920}
+  \endentry
+
+  \entry{bahaullah_muntakhabati-az_163}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Muntakhabati-az Asar-i-Hadrat-i-Bahá'u'lláh}
+    \field{year}{0163}
+  \endentry
+
+  \entry{gail_world_1978}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GM}{%
+         family={Gail},
+         familyi={G\bibinitperiod},
+         given={Marzieh},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM1}
+    \strng{fullhash}{GM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{Summer 1978}
+    \field{pages}{48}
+    \field{title}{World Order}
+    \verb{url}
+    \verb https://www.kahlilgibran.com/digital-archive/165-juliet-thompson-reme
+    \verb mbers-gibran-as-told-to-marzieh-gail-world-order-12-4-1978-pp-29-31/f
+    \verb ile.html
+    \endverb
+    \field{volume}{12}
+    \field{langid}{english}
+    \verb{file}
+    \verb Ig - Thinking of Children Editorial.pdf:/Users/jtim/Zotero/storage/U2
+    \verb N43U3U/Ig - Thinking of Children Editorial.pdf:application/pdf
+    \endverb
+    \field{year}{1978}
+    \field{urlday}{07}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{momen_selections_1987}{collection}{}
+    \name{editor}{1}{}{%
+      {{hash=MM}{%
+         family={Momen},
+         familyi={M\bibinitperiod},
+         given={Moojan},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {George Ronald}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{title}{Selections from the Writings of E. G. Browne on the Babi and
+  Bahá'í Religions}
+    \list{location}{1}{%
+      {Oxford, {UK}}%
+    }
+    \field{year}{1987}
+  \endentry
+
+  \entry{lewis_frank_scripture_1997}{article}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Lewis, Frank}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L2}
+    \strng{fullhash}{L2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Scripture as Literature: Sifting through the layers of the
+  text}
+    \verb{url}
+    \verb https://bahai-library.com/lewis_scripture_literature
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Bahá'í Studies Review}
+    \field{year}{1997}
+    \field{urlday}{25}
+    \field{urlmonth}{10}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{mccants_wronged_2002}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MW}{%
+         family={{McCants}},
+         familyi={M\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MW1}
+    \strng{fullhash}{MW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{12}
+    \field{title}{The Wronged One: Shí‘í Narrative Structure in
+  Bahá’u’lláh’s Tablet of Visitation for Mullá Husayn}
+    \field{langid}{english}
+    \verb{file}
+    \verb McCants - The Wronged One Shí‘í Narrative Structure in Bahá.pdf:
+    \verb /Users/jtim/Zotero/storage/JUHQRMXV/McCants - The Wronged One Shí‘
+    \verb í Narrative Structure in Bahá.pdf:application/pdf
+    \endverb
+    \field{year}{2002}
+  \endentry
+
+  \entry{lawson_todd_globalization_2005}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Lawson, Todd}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=W}{%
+         family={{Warburg, Margit}},
+         familyi={W\bibinitperiod},
+      }}%
+      {{hash=H}{%
+         family={{Hvithamar, Annika}},
+         familyi={H\bibinitperiod},
+      }}%
+      {{hash=W}{%
+         family={{Warmind, Morten}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Aarhus University Press}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Bahá'í and Globalization}
+    \field{pages}{35\bibrangedash 53}
+    \field{title}{Globalization and the Hidden Words}
+    \list{location}{1}{%
+      {Denmark}%
+    }
+    \verb{file}
+    \verb lawson_globalization_hidden-words.pdf:/Users/jtim/Zotero/storage/C8FN
+    \verb QVHX/lawson_globalization_hidden-words.pdf:application/pdf
+    \endverb
+    \field{year}{2005}
+  \endentry
+
+  \entry{justin_rice_what_2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Justin Rice}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{titleaddon}{Litcharts.com}
+    \field{title}{What Makes Hemingway Hemingway?}
+    \verb{url}
+    \verb https://www.litcharts.com/blog/analitics/what-makes-hemingway/
+    \endverb
+    \verb{file}
+    \verb What Makes Hemingway Hemingway? - LitCharts:/Users/jtim/Zotero/storag
+    \verb e/RX2P77SP/what-makes-hemingway.html:text/html
+    \endverb
+    \field{day}{03}
+    \field{month}{01}
+    \field{year}{2018}
+    \field{urlday}{16}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{kilgarriff_comparing_2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kilgarriff},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Corpus linguistics lacks strategies for describing and comparing corpora.
+  Currently most descriptions of corpora are textual, and questions such as
+  ‘what sort of a corpus is this?’, or ‘how does this corpus compare to
+  that?’ can only be answered impressionistically. This paper considers
+  various ways in which different corpora can be compared more objectively.
+  First we address the issue, ‘which words are particularly characteristic of
+  a corpus?’, reviewing and critiquing the statistical methods which have
+  been applied to the question and proposing the use of the Mann-Whitney ranks
+  test. Results of two corpus comparisons using the ranks test are presented.
+  Then, we consider measures for corpus similarity. After discussing
+  limitations of the idea of corpus similarity, we present a method for
+  evaluating corpus similarity measures. We consider several measures and
+  establish that a χ2-based one performs best. All methods considered in this
+  paper are based on word and ngram frequencies; the strategy is defended.%
+    }
+    \verb{doi}
+    \verb 10.1075/ijcl.6.1.05kil
+    \endverb
+    \field{issn}{1384-6655, 1569-9811}
+    \field{number}{1}
+    \field{pages}{97\bibrangedash 133}
+    \field{title}{Comparing Corpora}
+    \verb{url}
+    \verb http://www.jbe-platform.com/content/journals/10.1075/ijcl.6.1.05kil
+    \endverb
+    \field{volume}{6}
+    \field{langid}{english}
+    \verb{file}
+    \verb Kilgarriff - 2001 - Comparing Corpora.pdf:/Users/jtim/Zotero/storage/
+    \verb HVRJ5AB5/Kilgarriff - 2001 - Comparing Corpora.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Corpus Linguistics}
+    \field{day}{31}
+    \field{month}{12}
+    \field{year}{2001}
+    \field{urlday}{26}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{laramee_introduction_2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LFD}{%
+         family={Laramée},
+         familyi={L\bibinitperiod},
+         given={François\bibnamedelima Dominic},
+         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LFD1}
+    \strng{fullhash}{LFD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Introduction to stylometry with Python}
+    \verb{url}
+    \verb https://programminghistorian.org/en/lessons/introduction-to-stylometr
+    \verb y-with-python
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:/Users/jtim/Zotero/storage/D6PZE6R5/introduction-to-stylomet
+    \verb ry-with-python.html:text/html
+    \endverb
+    \field{journaltitle}{Programming Historian}
+    \field{day}{21}
+    \field{month}{04}
+    \field{year}{2018}
+    \field{urlday}{31}
+    \field{urlmonth}{12}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{genette_gerard_palimpsests:_1997}{book}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{Genette, Gérard}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Nebraska Press}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{volume 8}
+    \field{series}{Stages}
+    \field{title}{Palimpsests: Literature in the Second Degree}
+    \list{location}{2}{%
+      {Lincoln}%
+      {London}%
+    }
+    \field{year}{1997}
+  \endentry
+\enddatalist
+\endinput
