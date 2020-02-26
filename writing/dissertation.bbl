@@ -218,129 +218,6 @@
     \field{year}{2002}
   \endentry
 
-  \entry{bahaullah_tabernacle_2006}{book}{}
-    \name{author}{1}{}{%
-      {{hash=B}{%
-         family={{Bahá'u'lláh}},
-         familyi={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Tabernacle of Unity}
-    \verb{url}
-    \verb https://www.bahai.org/library/authoritative-texts/bahaullah/tabernacl
-    \verb e-unity/tabernacle-unity.pdf?e807341d
-    \endverb
-    \verb{file}
-    \verb tabernacle-unity.pdf:/Users/jtim/Zotero/storage/EPMSDC32/tabernacle-u
-    \verb nity.pdf:application/pdf
-    \endverb
-    \field{year}{2006}
-    \field{urlday}{04}
-    \field{urlmonth}{11}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{bahaullah_majmu`ih-i_1920}{book}{}
-    \name{author}{2}{}{%
-      {{hash=B}{%
-         family={{Bahá'u'lláh}},
-         familyi={B\bibinitperiod},
-      }}%
-      {{hash=M}{%
-         family={{Muhyi'd-Din Sabri Kurdi Sanandaji Kanimishkani}},
-         familyi={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Matba`at as-Sa`adah}%
-    }
-    \strng{namehash}{BM1}
-    \strng{fullhash}{BM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Majmu`ih-'i Matbu`ih ("Collected Tablets of Bahá'u'lláh")}
-    \list{location}{1}{%
-      {Cairo}%
-    }
-    \field{year}{1920}
-  \endentry
-
-  \entry{bahaullah_muntakhabati-az_163}{book}{}
-    \name{author}{1}{}{%
-      {{hash=B}{%
-         family={{Bahá'u'lláh}},
-         familyi={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Muntakhabati-az Asar-i-Hadrat-i-Bahá'u'lláh}
-    \field{year}{0163}
-  \endentry
-
-  \entry{gail_world_1978}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GM}{%
-         family={Gail},
-         familyi={G\bibinitperiod},
-         given={Marzieh},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GM1}
-    \strng{fullhash}{GM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{issue}{Summer 1978}
-    \field{pages}{48}
-    \field{title}{World Order}
-    \verb{url}
-    \verb https://www.kahlilgibran.com/digital-archive/165-juliet-thompson-reme
-    \verb mbers-gibran-as-told-to-marzieh-gail-world-order-12-4-1978-pp-29-31/f
-    \verb ile.html
-    \endverb
-    \field{volume}{12}
-    \field{langid}{english}
-    \verb{file}
-    \verb Ig - Thinking of Children Editorial.pdf:/Users/jtim/Zotero/storage/U2
-    \verb N43U3U/Ig - Thinking of Children Editorial.pdf:application/pdf
-    \endverb
-    \field{year}{1978}
-    \field{urlday}{07}
-    \field{urlmonth}{11}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{momen_selections_1987}{collection}{}
-    \name{editor}{1}{}{%
-      {{hash=MM}{%
-         family={Momen},
-         familyi={M\bibinitperiod},
-         given={Moojan},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {George Ronald}%
-    }
-    \strng{namehash}{MM1}
-    \strng{fullhash}{MM1}
-    \field{labelnamesource}{editor}
-    \field{labeltitlesource}{title}
-    \field{title}{Selections from the Writings of E. G. Browne on the Babi and
-  Bahá'í Religions}
-    \list{location}{1}{%
-      {Oxford, {UK}}%
-    }
-    \field{year}{1987}
-  \endentry
-
   \entry{lewis_frank_scripture_1997}{article}{}
     \name{author}{1}{}{%
       {{hash=L}{%
@@ -390,47 +267,6 @@
     \field{year}{2002}
   \endentry
 
-  \entry{lawson_todd_globalization_2005}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=L}{%
-         family={{Lawson, Todd}},
-         familyi={L\bibinitperiod},
-      }}%
-    }
-    \name{editor}{3}{}{%
-      {{hash=W}{%
-         family={{Warburg, Margit}},
-         familyi={W\bibinitperiod},
-      }}%
-      {{hash=H}{%
-         family={{Hvithamar, Annika}},
-         familyi={H\bibinitperiod},
-      }}%
-      {{hash=W}{%
-         family={{Warmind, Morten}},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Aarhus University Press}%
-    }
-    \strng{namehash}{L1}
-    \strng{fullhash}{L1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Bahá'í and Globalization}
-    \field{pages}{35\bibrangedash 53}
-    \field{title}{Globalization and the Hidden Words}
-    \list{location}{1}{%
-      {Denmark}%
-    }
-    \verb{file}
-    \verb lawson_globalization_hidden-words.pdf:/Users/jtim/Zotero/storage/C8FN
-    \verb QVHX/lawson_globalization_hidden-words.pdf:application/pdf
-    \endverb
-    \field{year}{2005}
-  \endentry
-
   \entry{justin_rice_what_2018}{online}{}
     \name{author}{1}{}{%
       {{hash=J}{%
@@ -457,6 +293,30 @@
     \field{urlday}{16}
     \field{urlmonth}{11}
     \field{urlyear}{2019}
+  \endentry
+
+  \entry{genette_gerard_palimpsests:_1997}{book}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{Genette, Gérard}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Nebraska Press}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{volume 8}
+    \field{series}{Stages}
+    \field{title}{Palimpsests: Literature in the Second Degree}
+    \list{location}{2}{%
+      {Lincoln}%
+      {London}%
+    }
+    \field{year}{1997}
   \endentry
 
   \entry{kilgarriff_comparing_2001}{article}{}
@@ -545,28 +405,195 @@
     \field{urlyear}{2019}
   \endentry
 
-  \entry{genette_gerard_palimpsests:_1997}{book}{}
+  \entry{abd_al-hadi_hairi_shiism_1977}{book}{}
     \name{author}{1}{}{%
-      {{hash=G}{%
-         family={{Genette, Gérard}},
-         familyi={G\bibinitperiod},
+      {{hash=A}{%
+         family={{Abd al-Hādī Ḥāʼirī}},
+         familyi={A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {University of Nebraska Press}%
+      {E.J. Brill}%
     }
-    \strng{namehash}{G1}
-    \strng{fullhash}{G1}
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{volume 8}
-    \field{series}{Stages}
-    \field{title}{Palimpsests: Literature in the Second Degree}
-    \list{location}{2}{%
-      {Lincoln}%
-      {London}%
+    \field{title}{Shīʿīsm and Constitutionalism in Iran: A Study of the Role
+  Played by the Persian Residents of Iraq in Iranian Politics}
+    \list{location}{1}{%
+      {Leiden}%
     }
-    \field{year}{1997}
+    \verb{file}
+    \verb Shīʿīsm and Constitutionalism in Iran\: A Study of the Role Played
+    \verb  by the ... - ʻAbd al-Hādī Ḥāʼirī - Google Books:/Users/jtim/
+    \verb Zotero/storage/QBZ9YPRB/books.html:text/html
+    \endverb
+    \field{year}{1977}
+  \endentry
+
+  \entry{lawson_todd_globalization_2005}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Lawson, Todd}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=W}{%
+         family={{Warburg, Margit}},
+         familyi={W\bibinitperiod},
+      }}%
+      {{hash=H}{%
+         family={{Hvithamar, Annika}},
+         familyi={H\bibinitperiod},
+      }}%
+      {{hash=W}{%
+         family={{Warmind, Morten}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Aarhus University Press}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Bahá'í and Globalization}
+    \field{pages}{35\bibrangedash 53}
+    \field{title}{Globalization and the Hidden Words}
+    \list{location}{1}{%
+      {Denmark}%
+    }
+    \verb{file}
+    \verb lawson_globalization_hidden-words.pdf:/Users/jtim/Zotero/storage/C8FN
+    \verb QVHX/lawson_globalization_hidden-words.pdf:application/pdf
+    \endverb
+    \field{year}{2005}
+  \endentry
+
+  \entry{gail_world_1978}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GM}{%
+         family={Gail},
+         familyi={G\bibinitperiod},
+         given={Marzieh},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM1}
+    \strng{fullhash}{GM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issue}{Summer 1978}
+    \field{pages}{48}
+    \field{title}{World Order}
+    \verb{url}
+    \verb https://www.kahlilgibran.com/digital-archive/165-juliet-thompson-reme
+    \verb mbers-gibran-as-told-to-marzieh-gail-world-order-12-4-1978-pp-29-31/f
+    \verb ile.html
+    \endverb
+    \field{volume}{12}
+    \field{langid}{english}
+    \verb{file}
+    \verb Ig - Thinking of Children Editorial.pdf:/Users/jtim/Zotero/storage/U2
+    \verb N43U3U/Ig - Thinking of Children Editorial.pdf:application/pdf
+    \endverb
+    \field{year}{1978}
+    \field{urlday}{07}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{momen_selections_1987}{collection}{}
+    \name{editor}{1}{}{%
+      {{hash=MM}{%
+         family={Momen},
+         familyi={M\bibinitperiod},
+         given={Moojan},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {George Ronald}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{title}{Selections from the Writings of E. G. Browne on the Babi and
+  Bahá'í Religions}
+    \list{location}{1}{%
+      {Oxford, {UK}}%
+    }
+    \field{year}{1987}
+  \endentry
+
+  \entry{bahaullah_tabernacle_2006}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Tabernacle of Unity}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/bahaullah/tabernacl
+    \verb e-unity/tabernacle-unity.pdf?e807341d
+    \endverb
+    \verb{file}
+    \verb tabernacle-unity.pdf:/Users/jtim/Zotero/storage/EPMSDC32/tabernacle-u
+    \verb nity.pdf:application/pdf
+    \endverb
+    \field{year}{2006}
+    \field{urlday}{04}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{bahaullah_majmu`ih-i_1920}{book}{}
+    \name{author}{2}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+      {{hash=M}{%
+         family={{Muhyi'd-Din Sabri Kurdi Sanandaji Kanimishkani}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Matba`at as-Sa`adah}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Majmu`ih-'i Matbu`ih ("Collected Tablets of Bahá'u'lláh")}
+    \list{location}{1}{%
+      {Cairo}%
+    }
+    \field{year}{1920}
+  \endentry
+
+  \entry{bahaullah_muntakhabati-az_163}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Muntakhabati-az Asar-i-Hadrat-i-Bahá'u'lláh}
+    \field{year}{0163}
   \endentry
 \enddatalist
 \endinput
