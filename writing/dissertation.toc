@@ -8,18 +8,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}The ``Raw'' Data}{3}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Character Normalization}{5}{section.3.2}
+\contentsline {section}{\numberline {3.2}Side Effects of Text Encoding}{5}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}A Range of Linguistic Modes}{9}{section.3.3}
+\contentsline {section}{\numberline {3.3}Measures of Linguistic Style}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Comparative Linguistics}{16}{section.3.4}
+\contentsline {section}{\numberline {3.4}Measures of Linguistic Range}{18}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusion}{18}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{21}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Word Embeddings}{21}{chapter.4}
+\contentsline {chapter}{\numberline {4}Word Embeddings}{22}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{23}{chapter.5}
+\contentsline {chapter}{Appendices}{24}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{23}{appendix*.11}
+\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{24}{appendix*.12}

@@ -3,13 +3,13 @@ from collections import Counter
 from helper import process, build_corpus
 
 # # Gather all file names
-root_dir = '/Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/data/'
+root_dir = '/Users/jtim/Dropbox/Academic/Sources/Corpora/bahai-works/data/'
 authors = ['bahaullah']
 languages = ['ar', 'fa']
 
 file_names = build_corpus(root_dir, authors, languages)
 
-directory = '/Users/jtim/Dropbox/Academic/sources/corpora/bahai-corpus/output/language-data/'
+directory = '/Users/jtim/Dropbox/Academic/Research/dissertation/research/output/pure-arabic/'
 if not os.path.exists(directory):
     os.makedirs(directory)
 
@@ -51,33 +51,33 @@ def main():
         if count < count:
             persian_vocabulary.remove(word)
 
-    with open("{}pure-persian.txt".format(directory), 'w') as out_file:
-        for name in file_names:
-            if 'fa.txt' in name:
-                with open("{}{}".format(root_dir, name), 'r') as f:
-                    words = set(process(f.read()).split())
-                    if len(words - arabic_vocabulary) > len(words) * .70: # if x percent of words not in Arabic vocabulary
-                        out_file.write(name+"\n")
-                        out_file.write("Number of words: {}\n".format(len(words)))
-                        out_file.write("Percent Persian words: {}\n".format(len(words - arabic_vocabulary) / len(words)))
-                        out_file.write("Words of possible Arabic origin: {}\n".format(words.intersection(arabic_vocabulary)))
-                        out_file.write("------------------------------\n\n")
-                        pure_persian_works.append(name)
-
-        out_file.write("{} Pure Persian works found:\n".format(len(pure_persian_works)))
-        for i in pure_persian_works:
-            out_file.write("\t"+"-"+i+"\n")
+    # with open("{}pure-persian.txt".format(directory), 'w') as out_file:
+    #     for name in file_names:
+    #         if 'fa.txt' in name:
+    #             with open("{}{}".format(root_dir, name), 'r') as f:
+    #                 words = set(process(f.read()).split())
+    #                 if len(words - arabic_vocabulary) > len(words) * .70: # if x percent of words not in Arabic vocabulary
+    #                     out_file.write(name+"\n")
+    #                     out_file.write("Number of words: {}\n".format(len(words)))
+    #                     out_file.write("Percent Persian words: {}\n".format(len(words - arabic_vocabulary) / len(words)))
+    #                     out_file.write("Words of possible Arabic origin: {}\n".format(words.intersection(arabic_vocabulary)))
+    #                     out_file.write("------------------------------\n\n")
+    #                     pure_persian_works.append(name)
+    #
+    #     out_file.write("{} Pure Persian works found:\n".format(len(pure_persian_works)))
+    #     for i in pure_persian_works:
+    #         out_file.write("\t"+"-"+i+"\n")
 
     with open("{}pure-arabic.txt".format(directory), 'w') as out_file:
         for name in file_names:
             if 'ar.txt' in name:
                 with open("{}{}".format(root_dir, name), 'r') as f:
                     words = set(process(f.read()).split())
-                    if len(words.intersection(persian_vocabulary)) > (len(words) * .99): # if x percent of words not in Persian vocabulary
+                    if len(words - persian_vocabulary) > (len(words) * .20): # if x percent of words not in Persian vocabulary
                         out_file.write(name+"\n")
                         out_file.write("Number of words: {}\n".format(len(words)))
-                        out_file.write("Percent Persian words: {}\n".format(len(words - arabic_vocabulary) / len(words)))
-                        out_file.write("Words of possible Arabic origin: {}\n".format(words.intersection(arabic_vocabulary)))
+                        out_file.write("Percent Arabic words: {}\n".format(len(words - persian_vocabulary) / len(words)))
+                        out_file.write("Words of possible Persian origin: {}\n".format(words.intersection(persian_vocabulary)))
                         out_file.write("------------------------------\n\n")
                         pure_arabic_works.append(name)
 
@@ -86,8 +86,8 @@ def main():
             out_file.write("\t"+"-"+i+"\n")
 
     # Figure out how to write a set of Words
-    with open("{}boundary-words.txt".format(directory), 'w') as out_file:
-        out_file.write(arabic_vocabulary.intersection(persian_vocabulary))
+    # with open("{}boundary-words.txt".format(directory), 'w') as out_file:
+    #     out_file.write(arabic_vocabulary.intersection(persian_vocabulary))
 
 if __name__ == "__main__":
     main()

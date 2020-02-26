@@ -102,7 +102,7 @@ This labelling strategy is justified by historical and cultural precedent. Persi
 The implications of such a strategy are that the total number of Arabic and Persian words are skewed towards Persian (there are 706,426 Arabic words compared to 1,906,607 Persian). Most of the ``Persian'' works contain large sections of Arabic text which gets counted in the Persian word count. This, unfortunately, is unavoidable given that a more granular labelling approach is not presently feasible.
 \par
 In order to provide context, a large corpus of contemporary texts were selected for comparison, which included a collection of over 60,000 Persian poems (``and a few prose texts'') prepared by the Persian Digital Library Pilot Project (PDL) \cite{noauthor_persian_nodate} and nearly 350 lengthy Arabic works from the `Knowledge, Information Technology and the Arabic Book' (KITAB) \cite{maxim_romanov_openiti:_2019}. The selections from the KITAB project were limited to works from the 12th-14th centuries AH (October 26, 1688-November 21, 1979) which is roughly contemporaneous with the Bah\'{a}'\'{i} works sampled. All works in the PDL corpus were added without exception while works in the KITAB corpus that contained Persian passages were removed to maintain consistency with the linguistic labelling strategy applied to the Bah\'{a}'\'{i} corpus.
-\section{Character Normalization}
+\section{Side Effects of Text Encoding}
 \par
 All computational linguistic work requires some level of pre-processing. There are several considerations that are peculiar to languages written in a modified form of the Arabic script. One such problem is the existence of ambiguous characters-characters with the same form, but different encodings \cite{jaf_semi-automatic_2016}. These characters appear the same to the human eye but have different underlying encodings. What appears to be the same letter in Persian and Arabic–the letter k\`{a}f for example–may in fact be two distinct encodings. Failure to conflate ambiguous characters results in the proliferation of vocabulary; a significant number of words that appear the same to the reader and were intended to be the same by the writer are treated as different words by the computer. Failure to remediate this issue prior to any down stream tasks can have significant negative effects on the outcome of those tasks. \begin{wrapfigure}{r}{.5\textwidth}
 	\begin{minipage}{\linewidth}
@@ -135,7 +135,7 @@ It is worth noting, also, the effect the minimum frequency threshold has on voca
 To illustrate this point and simultaneously delineate the limitations of the adopted strategies consider the word `kalima`, an Arabic loan word meanings `word`. The first letter `kaf` has a different encoding in Arabic and Persian systems. Given that text encoding is not well understood by your average typist and considering that many of these typists may know Arabic and Persian and use both keyboards the word will bifurcate in both languages resulting in two forms in each langauge. The word `kalima` has a further problem with its final letter. In the Arabic original form it ends in ta marbuta, a letter indicating the feminine gender of the word. This letter is not found in Persian and is replaced by the letter `heh`, a somewhat similar looking letter that also exisits in Arabic. Adding in this results in for different possible forms for the same word–Arabic kaf... ta marbuta (form 1), Persian kaf... heh (form 2), Arabic kaf... heh (form 3), Persian kaf... ta marbuta (form 4). Normalizing the kaf would eliminate forms 2 and 4. For many words that completely remove the problematic effects of divergent text encodings. Unfortunately there is no easy solution for the heh ending adopted in Persian. Since it is used in Arabic, and often at the end of words, it cannot be blindly replaced with a ta marbuta. This would fix words like kalima while creating significant noise in the process. Normalizing variant text encodings is only a solution for vocabulary proliferation problems resulting from the historical circumstances of text encoding in Arabic and Persian. It cannot solve problems resulting from other historical processes.
 \par
 Failure to adequately prepare language data for down stream tasks delegitimizes the outcomes of those tasks. Meaningless sequences of encodings will erroneously be treated as words and examined for statistical significance while meaningful words will be discarded. This point is well established. What is less not well acknowledged, the importance of which is likely completely lost on many digital humanitsts, is the need for local processing models. Global language models-one size fits all approaches-can be problematic in unexpected ways. Languages have developed through unique historical and cultural circumstances. Failure to adequately understand and respond to the historical processes in which the language developed and was encoded for computational processing can undermine the whole process.
-\section{A Range of Linguistic Modes}
+\section{Measures of Linguistic Style}
 \par
 The Bah\'{a}'\'{i} writings in general, and the writings of Bah\'{a}'u'llah in particular, are comprised of numerous styles or genres. Bah\'{a}'u'llah demonstrates an unusual, perhaps unique, ability to adjust the style of His writing to a multitude of ends.
 In a setting in which religion and culture appeared as fixed mountains, He showed an uncanny ability to sweep them aside, in favor of an ever more embracing vision.
@@ -157,7 +157,7 @@ It is worth noting that M\'{a}zindar\'{a}n\'{i}'s schema constitutes a significa
 Nader Saiedi points out that there were four modes in Islam: divine verses; prayers and supplications; commentaries and sermons; and rational, educational, and philosophical discourse \cite{saiedi_gate_2008}.
 To these four modes, the B\'{a}b added the Persian mode-the idea that God would speak in a language other than Arabic being quite revolutionary-which comprised the other four.
 \par
-The four modes of Islam roughly correlate with the perspective of the speaker.
+The four modes of Islamic revelation roughly correlate with the perspective of the speaker.
 The first mode (divine verses) represents the voice of God speaking directly to His creation.
 The second mode (prayers and supplications) is the voice of creation responding to its Creator.
 Together the two modes constitute a dialogue between the Creator and the creation.
@@ -176,8 +176,8 @@ It is possible that M\'{a}zindar\'{a}n\'{i} viewed this statement in light of th
 Religious law and the mystic search for the Beloved are often juxtaposed in Islamic discourse and Bah\'{a}'u'llah addresses them together in many prior works.
 M\'{a}zindar\'{a}n\'{i}'s shift to subject as the organizing principle of Bah\'{a}'u'llah's literary modes constitutes a departure from Islamic and B\'{a}b\'{i} discourse and, in my mind, is in need of further justification.
 \par
-The point of such a departure is to demonstrate Bah\'{a}'u'llah's intentionality in writing in many different styles even if He never intended to, or we cannot concretely, crystallize His stylistic schema into discrete genres.
-Such a point is important given that the variety of styles-whether style is operationalized as subject matter, perspective, or something else entirely-are likely to carry linguistic traces that are discernible through computational processes and may have implications for the choice of algorithms and the interpretation of their outputs.
+The point of the above discussion is to demonstrate Bah\'{a}'u'llah's intentionality in writing in many different styles even if He never intended to, or we cannot concretely, crystallize His stylistic schema into discrete genres.
+Such a point is important given that different styles-whether style is operationalized as subject matter, perspective, or something else-are likely to carry linguistic traces that are discernible through computational processes and may have implications for the choice of algorithms and the interpretation of their outputs.
 \begin{table}[]
 	\centering
 	\begin{tabular}{|l|l|r|r|}
@@ -210,33 +210,34 @@ Such a point is important given that the variety of styles-whether style is oper
 	\label{tab:pure-persian}
 \end{table}
 \par
-Evidence of Bah\'{a}'u'llah's linguistic capacity can be found in the range of the vocabulary He uses in different works. The spectrum ranges from pure Persian works-those with no Arabic vocabulary-to pure Arabic works and everything in between. There was a movement contemporary to Bah\'{a}'u'llah, and still in existence today, that aimed to cleanse the Persian language of all of its acquired Arabic baggage. Bah\'{a}'u'llah was not an advocate of this movement. In a moment of unusual candor He asserted: ``There are many things which have not been expressed in Persian, that is to say, words referring to such things have not been devised, whilst in Arabic there are several words describing the same thing. Indeed there existeth no language in the world as vast and comprehensive as Arabic \cite{bahaullah_tabernacle_2006}.'' Yet, at times He deferred to the wonts of His correspondents and demonstrated His capacity to write in pure Persian. A query for works largely situated in the Persian sphere of the Venn diagram depicted in \autoref{fig:venn-pers} returns several works written in this style. If the cutoff level is set at 70\%, that is at least 70\% of the words present in the work are only present in other Persian works, 11 works are returned \ref{tab:pure-persian} which can roughly be clustered into three groups: false positives, intentionally pure Persian works, and works with relatively few Arabic words that are symptomatic of another cause.
+Style, or literary genre, is certainly a fluid category.
+Assigning boundaries to genres can be problematic and assignments based on the subjective perceptions of the reader.
+But stylistic similarities between groups of literary works can shed light on questions of influence and literary awareness.
+The range of styles found among Bah\'{a}'u'llah's extant writings is noteworthy in this respect.
+Frank Lewis lists at least six distinct styles exemplified in His writings: the tradition of rhymed prose (saj'); tafsir; the classical Persian Sufi literary tradition exemplified by 'Att\'{a}r, Sa'di, Rumi and H\'{a}fez; the b\'{a}z ga\underline{sh}t adab\'{i} style which began as a counter movement to the sabk-e\'{i} style; the gnomic tradition (andarz); and the Persian gnostic tradition \cite{lewis_frank_scripture_1997}, while William McCants notes the Sh\'{i}'\'{i} narrative structure ``underlying most of His epistles and homilies \cite{mccants_wronged_2002}.''
+With little effort exemplars of other literary genres could be found in His writings.
+But those listed are sufficient to demonstrate the point that a number of disparate styles are contained within the corpus of Bah\'{a}'u'llah's writings.
+Style or genre, though an imprecise concept, is at least in part discernible through computational methods.
+Traces of style can be found in the language and vocabulary, grammar, and citations contained in the work.
 \par
-Numbers 6, 9 and 11 are likely false positives. The fact that they have relatively few Arabic words is likely attributable to something other the Bah\'{a}'u'llah's intention to write without the use of Arabic vocabulary. Work 11, for example, has only 45 words. The fact that such a small percentage of them are of Arabic origin is likely due to the sample size. Works 6 and 9 have a higher percentage of Arabic loan words than most of the works in this list and there seems to be no discernable pattern to their placement within the works.
+The linguistic characteristics of Bah\'{a}'u'llah's writings are visible through comparison to other authors.
+There are a number of methods–collectively referred to as stylometry–that have been used for this purpose, though only some may be applied to the writings of Bah\'{a}'u'llah.
+For example, Justin Rice uses average sentence length as a metric to distinguish the style of Hemingway's writings from that of other writers \cite{justin_rice_what_2018}.
+In classical Arabic and Persian, and in the writings of Bah\'{a}'u'llah specifically, the period is an afterthought.
+It is used inconsistently when it is used at all and it must, until proven otherwise for each text, be treated as what Gennete refers to a `paratextuality'–an element outside of the text that influences its reading \cite{genette_gerard_palimpsests:_1997}.
+Periods in English, and often in modern Arabic and Persian, are part of the author's literary production; they are added by the author and can be used as evidence of his or her writing style.
+In the writings of Bah\'{a}'u'llah periods were added by scribes or publishers, if at all, and cannot therefore be used as evidence of writing style.
+Without periods there is no reliable way of determining sentence length which makes this metric inappropriate for the task at hand.
+Other examples could be given but this should be sufficient to reinforce the underlying point that demonstrate that global language models are often inappropriate for humanities research.
+Stylometric methods, like all methods, are context dependent; any given method cannot be assumed to hold across language and time.
+The historical circumstances that bear on the development of the language as well as the writing, editing, and publishing of a text must always be given their due weight.
 \par
-Works 1, 4, 7, 8, 10 all have relatively few Arabic loan words though this is likely attributable to other factors. Works 1 and 4 are published in consecutive order with other tablets addressed to believers of Zoroastrian background \cite{bahaullah_majmu`ih-i_1920}. The sparcity of Arabic vocabulary may stem from the Author's awareness of the cultural and linguistic background of His audience without the overt intention to avoid Arabic words altogether. Likewise, works 7, 8, and 10 share a genre. The are all poems reminiscent of the major Persian Sufi classical poets: 'Att\'{a}r, Sa'di, Rumi and H\'{a}fez. A predominate Persian vocabular sprickled with Arabic words is charachteristic of the genre.
+Among the methods that can safely be used to compare the writings of Bah\'{a}'u'llah's writing style to contemporary authors are average word length \cite{justin_rice_what_2018}, lexical richness-the proportion of unique words to total words-\cite{justin_rice_what_2018}, and the chi-squared statistic  \cite{kilgarriff_comparing_2001} \cite{laramee_introduction_2018}.
+All three techniques have been used as a means of author detection while the first two have also been used, cautiously, to measure the writing ability of authors, the assumption being that their is a correlation between these statistics and a writer's knowledge of the language. In some cases word length has been combined with other language specific data resulting in more effective models for specific circumstances. For example, Renjui and Chu combine word length with word-final tones motifs and segment-final motifs to improve author prediction in Chinese texts \cite{Renkui and Chu}.
+Given that author detection is not the present objective, we will see what, if anything, these methods can teel us about the Bah\'{a}'u'llah's writing style. But first...
 \par
-There seems to be more deliberateness to the avoidance of Arabic words in works 2, 3, and 5. They were published in consecutive order with works 1 and 4 and were likewise addressed to believers of Zoroastrian heritage. Works 1, 4, and 5 were later translated in a volume of other works addressed to early Zoroastrian converts to the Bah\'{a}'\'{i} Faith \cite{bahaullah_tabernacle_2006}. The introduction to the volume explicitly mentions that the recipient of work number 1, M\'{a}nik\underline{ch}\'{i} Ṣ\'{a}ḥib, requested that Bah\'{a}'u'llah respond–and write exclusively henceforth–in pure Persian. Bah\'{a}'u'llah acknowledged this request by penning His reply in pure Persian, save the 75 word closing section which is a mixture of Arabic and Persian. Work number 2 found 9\% of the words in the Arabic vocabulary but these words consist largely of homonyms such as the word `\underline{sh}ahr', which means `announcement' or `declaration' in Arabic and `city' in Persian. The other words are clearly of Persian origin; their inclusion in the intersection of the Venn diagram \autoref{fig:venn-pers} must be attributed to their appearnace in an Arabic work or, possibly, to a mislabelling of one or more files. Work number 3 is of the same type; all words except the word `ism' are of Persian origin.
-\begin{wrapfigure}{r}{.5\textwidth}
-	\centering\captionsetup[subfigure]{justification=centering}
-	\includegraphics[width=\linewidth]{figures/venn-persian.png}
-	\caption[Venn diagram with Persian section highlighted]{Pure Persian works can be identified by querying for works with vocabulary situated largely in the Persian section}\label{fig:venn-pers}
-\end{wrapfigure}
-\par
-The examples above testify to Bah\'{a}'u'llah's ability to avoid words of Arabic origin altogether but they seem exceptional from a linguistic perspective. Generally His Persian writing is riddled with Arabic vocabulary. In many cases there are significanly more Arabic than Persian words. For example, in a letter to Zaynu'l-Muqarrab\'{i}n, nearly eighty percent of the words are of Arabic origin \cite{bahaullah_muntakhabati-az_163}. There are many other such examples. In these cases the Persian language is like the mortar hodling together the Arabic bricks; the verbs and some of the conjunctions are the only non-Arabic words in the text.
-\par
-The same search strategy cannot be employed for revealing pure Arabic works. The fact that Arabic words are commonplace in the Persian language implies that the vocabulary of many pure Arabic works would have one foot firmly in the intersection between the two languages. Roughly 60\% of the Arabic vocabulary also appears in Persian works whereas only 36\% of the Persian vocabulary is used in Arabic works. Given that the Persian words do not abound in the Arabic language, there are sufficient examples of Bah\'{a}'u'llah's Arabic with little to no Persian influence.
-\par
-The quality of Bah\'{a}'u'llah's writing in both Arabic and Persian is something of a controversy. On one hand His writings have won the praise of renowned experts such as Khalil Gibran, according to a the third hand account of Marzieh Gail, \cite{gail_world_1978} and Edward Granville Browne who wrote of the Kitab-i-Iqan: ``it is a work of great merit, vigorous in style, clear in argument, cogent in proof, and displaying no slight knowledge of the Bible, Qur'an, and Tradition'' \cite{momen_selections_1987}. On the other hand, He has ammassed a large number of critics. Such opinions-both positive and negative-are highly subjective and of little use in determining Bah\'{a}'u'llah's linguistic competence. There are better ways to document Bah\'{a}'u'llah's linguistic versatility and prowess.
-\par
-Style, or literary genre, is certainly a fluid category.  Assigning boundaries to genres can be problematic. Yet identifying stylistic similarities between groups of literary works can shed light on questions of influence and awareness. The range of styles found among Bah\'{a}'u'llah's extant writings is noteworthy in this respect. Frank Lewis lists at least six distinct styles exemplified in His writings: the tradition of rhymed prose (saj'); tafsir; the classical Persian Sufi literary tradition exemplified by 'Att\'{a}r, Sa'di, Rumi and H\'{a}fez; the b\'{a}z ga\underline{sh}t adab\'{i} style which began as a counter movement to the sabk-e\'{i} style; the gnomic tradition (andarz); and the Persian gnostic tradition \cite{lewis_frank_scripture_1997}. William McCants notes the Sh\'{i}'\'{i} narrative structure ``underlying most of His epistles and homilies \cite{mccants_wronged_2002}.'' With little effort exemplars of other literary genres could be found in His writings. However, those already listed are sufficient to demonstrate the point that a number of disparate styles are contained within the corpus of Bah\'{a}'u'llah's writings.
-\par
-An even more impressive example of Bah\'{a}'u'llah's command of Arabic and Persian and His ability to write with precision can be found in the Hidden Words \cite{bahaullah_hidden_2002}. At the time of the revelation of the Hidden Words (1857) Bahá'u'lláh's audience would have been divided into four exclusive groups: Sunni, Shi'i, Wujudies and Shuhudis. Each of these, in turn, would be divided into opposing factions: Akhbaris, Usulis, and Shaykhis \cite{lawson_todd_globalization_2005}.  Bah\'{a}'u'llah wrote the Hidden Words in such a way that it would appeal to each faction. Quotations are woven throughout in paraphrase, there is no mention of a proper name that could signal an allegiance to any faction, no isnads, no legalistic doctrines or cultic pronouncements \cite{lawson_todd_globalization_2005}. What remains is something that could be seen by all as pure religion. ``A religion apparently unencumbered by the tragedy of history, appearing as a restatement of basic truths through the medium of a compelling religious literary art in both languages of the city: Arabic (71 `verses' and Persian (82 `verses') \cite{lawson_todd_globalization_2005}.'' Such an accomplishment is extraordinary given the sectarian nature of the religious discourse of 19th century Baghdad. Moreover, it shows a profound awareness of the discourse of each faction; in order to know which words to avoid, Bah\'{a}'u'llah had to be aware of which were most strongly identified with each sect. The work suggests a clear intent to elevate the minds of His audieance beyond such sectarian discourse and serves as aprofound example of His command of both languages.
-\section{Comparative Linguistics}
-\par
-Another way to explore the linguistic characteristics of Bah\'{a}'u'llah's writings is through comparision to other authors. There are a number of methods that have been used for this purpose, many of which cannot be applied to the writings of Bah\'{a}'u'llah. For example, Justin Rice uses avarage sentence length as a metric to distinguish the style of Hemmingway's writings from that of other writers \cite{justin_rice_what_2018}. In classical Arabic and Persian, and in the writings of Bah\'{a}'u'llah specificaly, the period is an afterthought. It is used inconsistently when it is used at all and it must, until proven otherwise for each text, be treated as what Gennete refers to a `paratextuality'–an element outside of the text that influences its reading \cite{genette_gerard_palimpsests:_1997}. Periods in English, and often in modern Arabic and Persian, are part of the author's literary production; they are added by the author and can be used as evidence of his or her writing style. In the writings of Bah\'{a}'u'llah periods were added by scribes or publishers, if at all, and cannot therefore be used as evidence of writing style. Without periods there is no reliable way of determining sentence length which makes this metric inappropriate for the task at hand. Other examples could be given but this should be sufficient to demonstrate that stylometric methods are context dependent; any given method cannot be assumed to hold accross language and time.
-\par
-Among the methods that can safely be used to compare the writings of Bah\'{a}'u'llah to contemporary authors are average word length \cite{justin_rice_what_2018}, lexical richness \cite{justin_rice_what_2018}, and the chi-squared statistic  \cite{kilgarriff_comparing_2001} \cite{laramee_introduction_2018}. Word length
+Word length in Arabic, however, has one problem that should be noted. The partical `waw`, a single letter meaning and, is frequently found in all Arabic writing. Using waw frequently would not have the same effect in Arabic as the frequent use of `and' in English. The former is perfectly acceptable, whereas, the latter would be considered poor style. Given the lack of punctuation in classical Arabic the `waw` often functioned as a combination of the English `and', as well as `comma', and `period`. The problem for determining word length is that it is inconsistently adjoined with the succeeding word without a space in between them. Thus instead of having many words of length one, a significant portion of these `waws' are merged with other words. This, like the oxford comma in English, could be an effect of either author style or a side effect introduced when the physical text was made digital. This is consistently the case with the writings of the B\'{a}b sampled here-there are no words of lenght one-and inconsistently the case with the writings of al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}}, indicating probably the compilation of his writings from different sources. The impact of this is unclear and beyond the scope of this study, given that author detection is not the objective. This point does serve, however, as another example of the need for careful consideration of the history and circumstances surrounding the development of a language and the production of literary works.
+
 
 \begin{figure}[htb]
 	\centering
@@ -244,12 +245,7 @@ Among the methods that can safely be used to compare the writings of Bah\'{a}'u'
 	\caption[Most common word lengths used by Bah\'{a}'u'llah]{Most common word lengths used by Bah\'{a}'u'llah}
 	\label{fig:word-length-bahaullah}
 \end{figure}
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=15cm]{figures/word-length-abdulbaha.png}
-	\caption[Most common word lengths used by `Abdu'l-Bah\'{a}]{Most common word lengths used by `Abdu'l-Bah\'{a}}
-	\label{fig:word-length-abdulbaha}
-\end{figure}
+For example, a quick comparison of the word length data on Bah\'{a}'u'llah \autoref{fig:word-length-bahaullah} with that of the B\'{a}b \autoref{fig:word-length-bab} and `Abdu'l-Bah\'{a} \autoref{fig:word-length-abdulbaha} reveals that the trends for the first two are strickingly similar while the trend of the latter favors longer words. This could be evidence of the relative levels of education each recieved. While none of them had much in the way of formal schooling, `Abdu'l-Bah\'{a} served as a scribe for His father, Bah\'{a}'u'llah, and would have received some training through this service. Moreover, a cursory review of some of `Abdu'l-Bah\'{a}'s writings such as `Some Answered Questions' and His talks in the west published in `Abdu'l-Bah\'{a} in London' \cite{}, `Paris Talks'\cite{}, and `Promulgation of Universal Peace' \cite{} indicates that He was well read and conversant in many topics familiar to educated westerners.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=15cm]{figures/word-length-bab.png}
@@ -258,10 +254,106 @@ Among the methods that can safely be used to compare the writings of Bah\'{a}'u'
 \end{figure}
 \begin{figure}[htb]
 	\centering
+	\includegraphics[width=15cm]{figures/word-length-abdulbaha.png}
+	\caption[Most common word lengths used by `Abdu'l-Bah\'{a}]{Most common word lengths used by `Abdu'l-Bah\'{a}}
+	\label{fig:word-length-abdulbaha}
+\end{figure}
+\par
+This theory is supported by the word length data of al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i} \autoref{fig:word-length-murtada-ansari}–``the most influental mujtahid of his time whose supremacy was acknowledged also by Turkish, Arab, and Indian Sh\'{i}'\'{i}s \cite{abd_al-hadi_hairi_shiism_1977}'', and who was a contemporary of all three Authors in question.
+His word length also trends toward the longer side.
+\begin{figure}[htb]
+	\centering
 	\includegraphics[width=15cm]{figures/word-length-shaykh-murtada.png}
 	\caption[Most common word lengths used by al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}]{Most common word lengths used by al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}}
 	\label{fig:word-length-murtada-ansari}
 \end{figure}
+\par
+An even more impressive example of Bah\'{a}'u'llah's literary awareness and His ability to write with precision can be found in the Hidden Words \cite{bahaullah_hidden_2002}. At the time of the revelation of the Hidden Words (1857) Bahá'u'lláh's audience–the inhabitants of Baghdad specifically, though it is clear that He had a much wider audience in mind–would have been divided into four discrete groups: Sunni, Shi'i, Wujudies and Shuhudis. Each of these, in turn, would be divided into opposing factions: Akhbaris, Usulis, and Shaykhis \cite{lawson_todd_globalization_2005}. Bah\'{a}'u'llah wrote the Hidden Words in such a way that it would appeal to each faction. Quotations are woven throughout in paraphrase, there is no mention of a proper name that could signal an allegiance to any faction, no isnads, no legalistic doctrines or cultic pronouncements \cite{lawson_todd_globalization_2005}. What remains is something that could be seen by all as pure religion. ``A religion apparently unencumbered by the tragedy of history, appearing as a restatement of basic truths through the medium of a compelling religious literary art in both languages of the city: Arabic (71 `verses' and Persian (82 `verses') \cite{lawson_todd_globalization_2005}.'' Such an accomplishment is extraordinary given the sectarian nature of the religious discourse of 19th century Baghdad. Moreover, it shows a profound awareness of the discourse of each faction; in order to know which words to avoid, Bah\'{a}'u'llah had to be aware of catchwords prevalent in the discourse of each group. This work serves as a subtle, yet profound, reminder of Bah\'{a}'u'llah's linguistic ability. It demonstrates a clear intent to elevate the minds of His audience the prevalent sectarian discourse and serves as a profound example of His linguistic command.
+\par
+Write closing paragraph tying this discussion to the thesis on the need for local strategies.
+
+\section{Measures of Linguistic Range}
+\par
+Another aspect of Bah\'{a}'u'llah's writings worthy of consideration is His mastery of the two languages in which He wrote.
+The quality of Bah\'{a}'u'llah's writing in both Arabic and Persian is a source of disagreement.
+On one hand His writings have won the praise of renowned experts such as Khalil Gibran, according to a the third hand account of Marzieh Gail \cite{gail_world_1978}, and Edward Granville Browne who wrote of the Kit\'{a}b-i-\'{I}q\'{a}n: ``it is a work of great merit, vigorous in style, clear in argument, cogent in proof, and displaying no slight knowledge of the Bible, Qur'an, and Tradition \cite{momen_selections_1987}.''
+On the other hand, He has amassed a large number of critics.
+Such opinions-both positive and negative-are highly subjective and of little use in determining Bah\'{a}'u'llah's linguistic competence.
+The two sources mention above were included only to demonstrate the existence of disinterested and competent linguists who admired and praised Bah\'{a}'u'llah's Arabic and Persian writing ability.
+There are less subjective methods for determining Bah\'{a}'u'llah's linguistic versatility and prowess.
+\par
+Evidence of His linguistic abilities can be found in the range of the vocabulary He uses in different works.
+The spectrum ranges from pure Persian works-those with no Arabic vocabulary-to pure Arabic works and everything in between.
+There was a movement contemporary to Bah\'{a}'u'llah, and still in existence today, that aimed to cleanse the Persian language of all of its acquired Arabic baggage.
+Bah\'{a}'u'llah was not an advocate of this movement.
+In a moment of unusual candor He asserted: ``There are many things which have not been expressed in Persian, that is to say, words referring to such things have not been devised, whilst in Arabic there are several words describing the same thing. Indeed there existeth no language in the world as vast and comprehensive as Arabic \cite{bahaullah_tabernacle_2006}.''
+In spite of this assertion He, at times, deferred to the wonts of His correspondents and demonstrated His capacity to write in pure Persian.
+A query for works largely situated in the Persian sphere of the Venn diagram depicted in \autoref{fig:venn-pers} returns several works written in this style.
+If the cutoff level is set at 70\%, that is at least 70\% of the words present in the work are only present in other Persian works, 11 works are returned \ref{tab:pure-persian} which can roughly be clustered into three groups: false positives, intentionally pure Persian works, and works with relatively few Arabic words by coincidence or for some other unknown reason.
+\par
+Numbers 6, 9 and 11 are likely false positives.
+The fact that they have relatively few Arabic words is likely attributable to something other the Bah\'{a}'u'llah's intention to write without the use of Arabic vocabulary.
+Work 11, for example, has only 45 words.
+The fact that such a small percentage of them are of Arabic origin is likely due to the sample size.
+Works 6 and 9 have a higher percentage of Arabic loan words than most of the works in this list and there seems to be no discernible pattern to their placement within the works.
+\par
+Works 1, 4, 7, 8, 10 all have relatively few Arabic loan words though this is likely attributable to other factors.
+Works 1 and 4 are published in consecutive order with other tablets addressed to believers of Zoroastrian background \cite{bahaullah_majmu`ih-i_1920}.
+The scarcity of Arabic vocabulary may stem from the Author's awareness of the cultural and linguistic background of His audience without the overt intention to avoid Arabic words altogether.
+Likewise, works 7, 8, and 10 share a genre.
+They are all poems reminiscent of the major Persian Sufi classical poets: 'Att\'{a}r, Sa'di, Rumi and H\'{a}fez.
+A predominate Persian vocabulary sprinkled with Arabic words is characteristic of the genre.
+\par
+There seems to be more deliberateness to the avoidance of Arabic words in works 2, 3, and 5.
+They were published in consecutive order with works 1 and 4 and were likewise addressed to believers of Zoroastrian heritage.
+Works 1, 4, and 5 were later translated in a volume of other works addressed to early Zoroastrian converts to the Bah\'{a}'\'{i} Faith \cite{bahaullah_tabernacle_2006}.
+The introduction to this volume explicitly mentions that the recipient of work number 1, M\'{a}nik\underline{ch}\'{i} Ṣ\'{a}ḥib, requested that Bah\'{a}'u'llah respond–and write exclusively henceforth–in pure Persian.
+Bah\'{a}'u'llah acknowledged this request by penning His reply in pure Persian, save the 75 word closing section which is a mixture of Arabic and Persian.
+Work number 2 found 9\% of the words in the Arabic vocabulary but these words consist largely of homonyms such as the word `\underline{sh}ahr', which means `announcement' or `declaration' in Arabic and `city' in Persian.
+The other words are clearly of Persian origin; their inclusion in the intersection of the Venn diagram \autoref{fig:venn-pers} must be attributed to their appearance in an Arabic work or, possibly, to a mislabelling of one or more files.
+Work number 3 is of the same type; all words except the word `ism' are of Persian origin.
+\begin{wrapfigure}{r}{.5\textwidth}
+	\centering\captionsetup[subfigure]{justification=centering}
+	\includegraphics[width=\linewidth]{figures/venn-persian.png}
+	\caption[Venn diagram with Persian section highlighted]{Pure Persian works can be identified by querying for works with vocabulary situated largely in the Persian section}\label{fig:venn-pers}
+\end{wrapfigure}
+\par
+The examples above testify to Bah\'{a}'u'llah's ability to avoid words of Arabic origin altogether but they seem exceptional from a linguistic perspective.
+Generally His Persian writing is riddled with Arabic vocabulary.
+In many cases there are significantly more Arabic than Persian words.
+For example, in a letter to Zaynu'l-Muqarrab\'{i}n, nearly eighty percent of the words are of Arabic origin \cite{bahaullah_muntakhabati-az_163}.
+There are many other such examples.
+In these cases the Persian language is like the mortar holding together the Arabic bricks; the verbs and some of the conjunctions are the only non-Arabic words in the text.
+\begin{table}[]
+	\centering
+		\begin{tabular}{|l|l|r|r|}
+			\hline
+			\rowcolor[HTML]{EFEFEF}
+			\textbf{} & \textbf{File Path}                       & \textbf{Word Count}          & \textbf{Percent Persian}      \\ \hline
+1         & bahaullah/text/bahaullah-aiab-176-ar.txt & \cellcolor[HTML]{FFFFFF}1215 & \cellcolor[HTML]{FFFFFF}24.94 \\ \hline
+			\rowcolor[HTML]{EFEFEF}
+2         & bahaullah/text/bahaullah-st-037-ar.txt   & 441                          & 25.62                         \\ \hline
+			\rowcolor[HTML]{FFFFFF}
+3         & bahaullah/text/bahaullah-st-154-ar.txt   & 655                          & 21.07                         \\ \hline
+			\rowcolor[HTML]{EFEFEF}
+4         & bahaullah/text/bahaullah-st-029-ar.txt   & 2450                         & 34.12                         \\ \hline
+			\rowcolor[HTML]{FFFFFF}
+5         & bahaullah/text/bahaullah-aqa2-6-ar.txt   & 1180                         & 20.76                         \\ \hline
+\end{tabular}
+\caption{Works of Bah\textbackslash{}'\{a\}'u'llah possibly written exclusively in Arabic }
+\label{tab:pure-arabic}
+\end{table}
+\par
+One would not expect the same search strategy to work for revealing pure Arabic works.
+The fact that Arabic words are commonplace in the Persian language implies that the vocabulary of many Arabic works would have one foot firmly in the intersection between the two languages.
+Roughly 60\% of the Arabic vocabulary also appears in Persian works whereas only 36\% of the Persian vocabulary can be found in Arabic works.
+The strategy, however, is quite effective if these circumstances are accounted for and the cutoff is set to a lower threshold.
+If it is set at 20\%, for example, 83 works are returned \ref{tab:pure-arabic}.
+A cursory review of the supposed Persian vocabulary in these works indicates that it is virtually all Arabic.
+\par
+Write closing paragraph tying this discussion to the thesis on the need for local strategies.
+
+
 \section{Conclusion}
 Bah\'{a}'u'llah clearly adapted His writing style-genre, subject matter, and vocabulary-to His intended audience.
 
