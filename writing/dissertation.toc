@@ -12,14 +12,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Measures of Linguistic Style}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Measures of Linguistic Range}{18}{section.3.4}
+\contentsline {section}{\numberline {3.4}Measures of Linguistic Range}{20}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusion}{21}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{24}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Word Embeddings}{22}{chapter.4}
+\contentsline {chapter}{\numberline {4}Word Embeddings}{25}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{24}{chapter.5}
+\contentsline {chapter}{Appendices}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{24}{appendix*.12}
+\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{27}{appendix*.12}
