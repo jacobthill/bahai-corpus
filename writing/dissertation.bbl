@@ -164,6 +164,49 @@
     \field{year}{2016}
   \endentry
 
+  \entry{bahaullah_call_nodate}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Bahá'u'lláh},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Call of the Divine Beloved - Selected Mystical Works of
+  Bahá'u'lláh}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/bahaullah/call-divi
+    \verb ne-beloved/
+    \endverb
+  \endentry
+
+  \entry{taherzadeh_revelation_1975}{mvbook}{}
+    \name{author}{1}{}{%
+      {{hash=TA}{%
+         family={Taherzadeh},
+         familyi={T\bibinitperiod},
+         given={Adib},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {George Ronald Pub Ltd}%
+    }
+    \strng{namehash}{TA1}
+    \strng{fullhash}{TA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-85398-057-5}
+    \field{pagetotal}{384}
+    \field{title}{The Revelation of Bahá'u'lláh: Baghdád 1853-63}
+    \field{volumes}{4}
+    \field{volume}{1}
+    \field{year}{1975}
+  \endentry
+
   \entry{saiedi_gate_2008}{book}{}
     \name{author}{1}{}{%
       {{hash=SN}{%
@@ -200,22 +243,89 @@
   \endentry
 
   \entry{bahaullah_hidden_2002}{book}{}
+    \name{author}{2}{}{%
+      {{hash=B}{%
+         family={{Bahá'u'lláh}},
+         familyi={B\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Effendi},
+         familyi={E\bibinitperiod},
+         given={Shoghi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Baha'i Publishing}%
+    }
+    \strng{namehash}{BES1}
+    \strng{fullhash}{BES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{191}
+    \field{title}{The Hidden Words}
+    \field{year}{2002}
+  \endentry
+
+  \entry{bahaullah_prayers_1987}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Bahá'u'lláh},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \name{translator}{1}{}{%
+      {{hash=ES}{%
+         family={Effendi},
+         familyi={E\bibinitperiod},
+         given={Shoghi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{US} Bahá’í Publishing Trust}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{pocket-size edition}
+    \field{pagetotal}{339}
+    \field{title}{Prayers and Meditations by Bahá'u'lláh}
+    \field{year}{1987}
+  \endentry
+
+  \entry{bahaullah_epistle_nodate}{book}{}
     \name{author}{1}{}{%
       {{hash=B}{%
          family={{Bahá'u'lláh}},
          familyi={B\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Baha'i Publishing}%
+    \name{translator}{1}{}{%
+      {{hash=ES}{%
+         family={Effendi},
+         familyi={E\bibinitperiod},
+         given={Shoghi},
+         giveni={S\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
+    \strng{namehash}{B2}
+    \strng{fullhash}{B2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{pagetotal}{191}
-    \field{title}{The Hidden Words}
-    \field{year}{2002}
+    \field{title}{Epistle to the Son of the Wolf}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/bahaullah/epistle-s
+    \verb on-wolf/
+    \endverb
+    \verb{file}
+    \verb Epistle to the Son of the Wolf | Bahá’í Reference Library:/Users/
+    \verb jtim/Zotero/storage/8548WBDV/epistle-son-wolf.html:text/html
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{lewis_frank_scripture_1997}{article}{}
@@ -405,6 +515,255 @@
     \field{urlyear}{2019}
   \endentry
 
+  \entry{renkui_stylometric_nodate}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RH}{%
+         family={Renkui},
+         familyi={R\bibinitperiod},
+         given={Hou},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Huang},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RHCH1}
+    \strng{fullhash}{RHCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We propose a new approach to stylometric analysis combining lexical and
+  textual information, but without annotation or other pre-processing. In
+  particular, our study makes use Chinese tones motifs and word length motifs
+  automatically extracted from unannotated texts. The proposed approach is
+  based on linked data in nature as tone and word-length information is
+  extracted from a lexicon and mapped to the text. Support vector machine and
+  random forest were used to establish the classification models for author
+  differentiation. Based on comparative study of classification results of
+  different models, we conclude that the combination of word-final tones
+  motifs, segment-final motifs and word length motifs provides the best outcome
+  and hence is the best model.%
+    }
+    \field{pages}{8}
+    \field{title}{Stylometric Studies based on Tone and Word Length Motifs}
+    \field{langid}{english}
+    \verb{file}
+    \verb Renkui and Chu - Stylometric Studies based on Tone and Word Length .p
+    \verb df:/Users/jtim/Zotero/storage/4DUXATRH/Renkui and Chu - Stylometric S
+    \verb tudies based on Tone and Word Length .pdf:application/pdf
+    \endverb
+  \endentry
+
+  \entry{habash_arabic_2006}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Habash},
+         familyi={H\bibinitperiod},
+         given={Nizar},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sadat},
+         familyi={S\bibinitperiod},
+         given={Fatiha},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{HNSF1}
+    \strng{fullhash}{HNSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this paper, we study the effect of different word-level preprocessing
+  decisions for Arabic on {SMT} quality. Our results show that given large
+  amounts of training data, splitting off only proclitics performs best.
+  However, for small amounts of training data, it is best to apply English-like
+  tokenization using part-of-speech tags, and sophisticated morphological
+  analysis and disambiguation. Moreover, choosing the appropriate preprocessing
+  produces a signiﬁcant increase in {BLEU} score if there is a change in
+  genre between training and test data.%
+    }
+    \field{booktitle}{Proceedings of the Human Language Technology Conference
+  of the {NAACL}, Companion Volume: Short Papers on {XX} - {NAACL} '06}
+    \verb{doi}
+    \verb 10.3115/1614049.1614062
+    \endverb
+    \field{eventtitle}{the Human Language Technology Conference of the {NAACL},
+  Companion Volume: Short Papers}
+    \field{pages}{49\bibrangedash 52}
+    \field{title}{Arabic preprocessing schemes for statistical machine
+  translation}
+    \verb{url}
+    \verb http://portal.acm.org/citation.cfm?doid=1614049.1614062
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York, New York}%
+    }
+    \verb{file}
+    \verb Habash and Sadat - 2006 - Arabic preprocessing schemes for statistica
+    \verb l machi.pdf:/Users/jtim/Zotero/storage/X52GXQAN/Habash and Sadat - 20
+    \verb 06 - Arabic preprocessing schemes for statistical machi.pdf:applicati
+    \verb on/pdf
+    \endverb
+    \field{year}{2006}
+    \field{urlday}{27}
+    \field{urlmonth}{02}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{sajjad_challenging_2017}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=SH}{%
+         family={Sajjad},
+         familyi={S\bibinitperiod},
+         given={Hassan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Dalvi},
+         familyi={D\bibinitperiod},
+         given={Fahim},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Durrani},
+         familyi={D\bibinitperiod},
+         given={Nadir},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Abdelali},
+         familyi={A\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Belinkov},
+         familyi={B\bibinitperiod},
+         given={Yonatan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vogel},
+         familyi={V\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{SHDFDNAABYVS1}
+    \strng{fullhash}{SHDFDNAABYVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Word segmentation plays a pivotal role in improving any Arabic {NLP}
+  application. Therefore, a lot of research has been spent in improving its
+  accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii)
+  domain/dialect dependent. We explore three language-independent alternatives
+  to morphological segmentation using: i) data-driven sub-word units, ii)
+  characters as a unit of learning, and iii) word embeddings learned using a
+  character {CNN} (Convolution Neural Network). On the tasks of Machine
+  Translation and {POS} tagging, we found these methods to achieve close to,
+  and occasionally surpass state-of-the-art performance. In our analysis, we
+  show that a neural machine translation system is sensitive to the ratio of
+  source and target tokens, and a ratio close to 1 or greater, gives optimal
+  performance.%
+    }
+    \field{booktitle}{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics (Volume 2: Short Papers)}
+    \verb{doi}
+    \verb 10.18653/v1/P17-2095
+    \endverb
+    \field{eventtitle}{Proceedings of the 55th Annual Meeting of the
+  Association for Computational Linguistics (Volume 2: Short Papers)}
+    \field{pages}{601\bibrangedash 607}
+    \field{shorttitle}{Challenging Language-Dependent Segmentation for Arabic}
+    \field{title}{Challenging Language-Dependent Segmentation for Arabic: An
+  Application to Machine Translation and Part-of-Speech Tagging}
+    \verb{url}
+    \verb http://aclweb.org/anthology/P17-2095
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Vancouver, Canada}%
+    }
+    \verb{file}
+    \verb Sajjad et al. - 2017 - Challenging Language-Dependent Segmentation fo
+    \verb r Ar.pdf:/Users/jtim/Zotero/storage/8NYMGPT3/Sajjad et al. - 2017 - C
+    \verb hallenging Language-Dependent Segmentation for Ar.pdf:application/pdf
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{27}
+    \field{urlmonth}{02}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{abdul-baha_abdul-baha_1982}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={'Abdu'l-Bahá},
+         familyi={A\bibinitperiod-B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{UK} Bahá’í Publishing Trust}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{127}
+    \field{title}{'Abdu'l-Bahá in London}
+    \field{year}{1982}
+  \endentry
+
+  \entry{abdul-baha_paris_nodate}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={'Abdu'l-Bahá},
+         familyi={A\bibinitperiod-B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Paris Talks}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/abdul-baha/paris-ta
+    \verb lks/
+    \endverb
+  \endentry
+
+  \entry{abdul-baha_promulgation_1982}{book}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{'Abdu'l-Bahá}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{US} Bahá’í Publishing Trust}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{470}
+    \field{title}{The Promulgation of Universal Peace}
+    \field{volume}{1}
+    \field{year}{1982}
+  \endentry
+
   \entry{abd_al-hadi_hairi_shiism_1977}{book}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -537,8 +896,8 @@
          familyi={B\bibinitperiod},
       }}%
     }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
+    \strng{namehash}{B2}
+    \strng{fullhash}{B2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Tabernacle of Unity}
@@ -588,8 +947,8 @@
          familyi={B\bibinitperiod},
       }}%
     }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
+    \strng{namehash}{B2}
+    \strng{fullhash}{B2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Muntakhabati-az Asar-i-Hadrat-i-Bahá'u'lláh}

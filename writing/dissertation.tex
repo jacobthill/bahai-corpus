@@ -75,15 +75,27 @@ citestyle=numeric
 \pagenumbering{arabic}
 Overall argument: We are applying algorithms developed for information science and computer science tasks to humanities tasks and this is problematic because it requires significantly more interogation of the process, the bias in the data (text encoding, archival bias e.g. whats included and not included, etc.).
 
-When moving into a new field like Digital Humanities it is important to explore some questions related to methodological fit. These explorations have to be done for different fields and different problems. We can't have one solution for all humanities probelms. The kind of work done thus far relates to some basic explorations of the application of algorithms to humanities problems, often without a clear idea of how to interpret the results, as well as some NLP work that addresses issues related to Arabic and Persian corpora. Before applying NLP problems to Bahá'í texts it is important to contextualize the probelms which entails framing them in such a way that computer scientists and humanists, to adopt an overly simplistic schema of the audienc, can engage in a common conversation.
+When moving into a new field like Digital Humanities it is important to explore some questions related to methodological fit. These explorations have to be done for different fields and different problems. We can't have one solution for all humanities problems. The kind of work done thus far relates to some basic explorations of the application of algorithms to humanities problems, often without a clear idea of how to interpret the results, as well as some NLP work that addresses issues related to Arabic and Persian corpora. Before applying NLP problems to Bahá'í texts it is important to contextualize the problems which entails framing them in such a way that computer scientists and humanists, to adopt an overly simplistic schema of the audience, can engage in a common conversation.
 \chapter{Literature Review}
 
 \chapter{The Linguistic Setting}
 \par
+Among the challenges in applying algorithms developed by computer and information scientists to humanities problems is that there is an, often unnoticed or underappreciated, shift in context that requires reckoning. In machine learning research the data set and evaluation methods are often treated as controlled variables or benchmarks for testing algorithms. In humanities research the data set–the use of language within a given social and historical context–is the thing of interest. A simple inversion of this relationship (treating the algorithms as controlled variables and substituting data sets) could lead to disasterous. This is the likely point of departure for most humanists in learning to program and examine old problems through new lenses but it cannot be the standard for Digital Humanities research.
+\par
+This approach must give way to a more careful inquiry into the inputs, transformation processes, and outputs of each step in the algorithm. Humanists must begin to think more like computer scientists. They must learn to break down various algorithms into their common components and reckongize how and why these components are recycled and exchanged to build new algorithms. These skills are required in order to know which algorithms to apply to a given problem.
+\par
+Humanists must also learn to apply traditional humanities scholarship to new ends. They must use these skills to interogate the processes through which their data came to be-historical, cultural, political processes that might have significant bearing on the choice of algorithms.
+\par
+Need evaluation methods that take into consideration the basic “quality” of the word vectors without losing site of the object of interest.
 
-\par
+The problem with global language models and the need for local models.
+
+The shift in context from computer science to humanities research (e.g. the focus of the study).
+
+The complexitied of the Arabic and Persian language.
+
 The Bah\'{a}'\'{i} writings are something of a linguistic anomaly.
-\par
+
 Few writers have such a wide ranging audience in mind or adapt so much to the linguistic capacities/leanings of their audience.
 \section{The ``Raw'' Data}
 \par
@@ -146,13 +158,13 @@ A clear identification of these modes was never made by Bah\'{a}'u'llah or eithe
 Evidence of Bah\'{a}'u'llah's view towards such schemas can be found in works such as 'The Seven Valleys' and 'The Gems of Divine Mysteries'.
 In the former He delineates a series of steps that a seeker must pass through in his quest for the Beloved.
 In the latter the steps are reworked, and some of which are renamed.
-In a later work He offers insight into His perspective on these stages and why they were adopted at all: ``This treatise [The Seven Valleys] was revealed in the language of the people, in the days prior to Our Declaration. The occasion for its revelation was the receipt of a letter addressed to the Most Holy Court in ‘Iráq from a man of Sunní persuasion, who was both a scholar and a mystic. This treatise was therefore revealed, in accordance with divine wisdom, in the manner that was current amongst the people. However, in this day, every soul who hath fixed his gaze upon the Supreme Horizon, and hath recognized the one true God, hath verily attained unto every one of the seven valleys or seven stations mentioned therein \cite{}.''
+In a later work He offers insight into His perspective on these stages and why they were adopted at all: ``This treatise [The Seven Valleys] was revealed in the language of the people, in the days prior to Our Declaration. The occasion for its revelation was the receipt of a letter addressed to the Most Holy Court in ‘Iráq from a man of Sunní persuasion, who was both a scholar and a mystic. This treatise was therefore revealed, in accordance with divine wisdom, in the manner that was current amongst the people. However, in this day, every soul who hath fixed his gaze upon the Supreme Horizon, and hath recognized the one true God, hath verily attained unto every one of the seven valleys or seven stations mentioned therein \cite{bahaullah_call_nodate}.''
 In several other works Bah\'{a}'u'llah advances other schemes with different stages.
 These schemas are irreconcilable in some cases indicating His frequent willingness to respond from the framework of His audience and gradually rework that framework, discarding concepts that served as obstacles to the unification of humanity, often accepting or ignoring harmless components of that framework, and recasting the remainder in a new form that redeployed existing literary tropes, tropes that could, to the inattentive reader, be mistaken for the substance of the framework.
 \par
 It is uncertain if Bah\'{a}'u'llah's linguistic modes should be viewed in the same light but the fact that He never endeavored to describe them in any detail suggests their relative importance in His overall message.
 Nevertheless, others have attempted to delineate these modes.
-Jin\'{a}b-i-F\'{a}dil-i-M\'{a}zindar\'{a}n\'{i}, a prominent early scholar of the Bah\'{a}'\'{i} Faith, made a preliminary classification which attempted to identify these nine modes as: those tablets with the tone of authority, those with the tone of servitude, those interpreting past scripture, those specifying of laws and ordinances, mystical writings, writings about government and world order, writings about the various branches of learning, writings calling for education, good character and virtues, and works treating social teachings \cite{}.
+Jin\'{a}b-i-F\'{a}dil-i-M\'{a}zindar\'{a}n\'{i}, a prominent early scholar of the Bah\'{a}'\'{i} Faith, made a preliminary classification which attempted to identify these nine modes as: those tablets with the tone of authority, those with the tone of servitude, those interpreting past scripture, those specifying of laws and ordinances, mystical writings, writings about government and world order, writings about the various branches of learning, writings calling for education, good character and virtues, and works treating social teachings \cite{taherzadeh_revelation_1975}.
 It is worth noting that M\'{a}zindar\'{a}n\'{i}'s schema constitutes a significant departure from B\'{a}b\'{i} and Islamic discourse. The Arabic term \underline{sh}a'n, meaning mode or style, can be found in the writings of the B\'{a}b and, more generally, in Islamic thought.
 Nader Saiedi points out that there were four modes in Islam: divine verses; prayers and supplications; commentaries and sermons; and rational, educational, and philosophical discourse \cite{saiedi_gate_2008}.
 To these four modes, the B\'{a}b added the Persian mode-the idea that God would speak in a language other than Arabic being quite revolutionary-which comprised the other four.
@@ -162,7 +174,7 @@ The first mode (divine verses) represents the voice of God speaking directly to 
 The second mode (prayers and supplications) is the voice of creation responding to its Creator.
 Together the two modes constitute a dialogue between the Creator and the creation.
 Linguistically, they might be distinguished by the prominence of first and second person pronouns and verbs conjugated in the first and second person.
-See, for example, the two following passages, the first of which is in the mode of divine verses and the second in the mode of supplication and prayer: ``O SON OF MAN! \emph{I loved thy} creation, hence \emph{I created thee}. Wherefore, do \emph{thou love Me}, that \emph{I} may \emph{name thy} name and \emph{fill thy} soul with the spirit of life \cite{bahaullah_hidden_2002}.'' ``Glory be to \emph{Thee}, O \emph{my} God!  \emph{Thou hearest Thine} ardent lovers lamenting in their separation from \emph{Thee}, and such as have recognized \emph{Thee} wailing because of their remoteness from \emph{Thy} presence \cite{}.''
+See, for example, the two following passages, the first of which is in the mode of divine verses and the second in the mode of supplication and prayer: ``O SON OF MAN! \emph{I loved thy} creation, hence \emph{I created thee}. Wherefore, do \emph{thou love Me}, that \emph{I} may \emph{name thy} name and \emph{fill thy} soul with the spirit of life \cite{bahaullah_hidden_2002}.'' ``Glory be to \emph{Thee}, O \emph{my} God!  \emph{Thou hearest Thine} ardent lovers lamenting in their separation from \emph{Thee}, and such as have recognized \emph{Thee} wailing because of their remoteness from \emph{Thy} presence \cite{bahaullah_prayers_1987}.''
 The third (commentaries and sermons) and fourth modes (rational, educational, and philosophical discourse) would be characterized by a predominance of third person pronouns and verbs as the subject matter is further removed from the speaker.
 Thus the four modes correspond to varying degrees of remoteness from the Divine creator and are affirmed, respectively, by the verses ``I am God'', ``Thou art God'', ``He is God'', and ''He is God Who is'' \cite{saiedi_gate_2008}.
 To these modes, the B\'{a}b added the Persian mode, the content of which could be any of the other four modes \cite{saiedi_gate_2008} and would have the same linguistic markers to the extent that these markers are shared between the Arabic and Persian languages.
@@ -171,7 +183,7 @@ It is clear that many of Bah\'{a}'u'llah's readers would have been familiar with
 The first three categories in M\'{a}zindar\'{a}n\'{i}'s classification overlap with those established in Islamic thought and reaffirmed by the B\'{a}b.
 Categories four through nine depart from the established norm in favor of a subject oriented schema.
 Moreover, many of M\'{a}zindar\'{a}n\'{i}'s later categories are not unique to the writings of Bah\'{a}'u'llah; they can be found in Islamic and B\'{a}b\'{i} scripture as well.
-In 'The Epistle to the Son of the Wolf', Bah\'{a}'u'llah's last major work, He writes: “At one time We spoke in the language of the lawgiver; at another in that of the truth-seeker and the mystic \cite{}”.
+In 'The Epistle to the Son of the Wolf', Bah\'{a}'u'llah's last major work, He writes: “At one time We spoke in the language of the lawgiver; at another in that of the truth-seeker and the mystic \cite{bahaullah_epistle_nodate}”.
 It is possible that M\'{a}zindar\'{a}n\'{i} viewed this statement in light of these linguistic modes since these correspond with two of the modes he identified, but I see no clear reason to conflate the two.
 Religious law and the mystic search for the Beloved are often juxtaposed in Islamic discourse and Bah\'{a}'u'llah addresses them together in many prior works.
 M\'{a}zindar\'{a}n\'{i}'s shift to subject as the organizing principle of Bah\'{a}'u'llah's literary modes constitutes a departure from Islamic and B\'{a}b\'{i} discourse and, in my mind, is in need of further justification.
@@ -233,19 +245,43 @@ Stylometric methods, like all methods, are context dependent; any given method c
 The historical circumstances that bear on the development of the language as well as the writing, editing, and publishing of a text must always be given their due weight.
 \par
 Among the methods that can safely be used to compare the writings of Bah\'{a}'u'llah's writing style to contemporary authors are average word length \cite{justin_rice_what_2018}, lexical richness-the proportion of unique words to total words-\cite{justin_rice_what_2018}, and the chi-squared statistic  \cite{kilgarriff_comparing_2001} \cite{laramee_introduction_2018}.
-All three techniques have been used as a means of author detection while the first two have also been used, cautiously, to measure the writing ability of authors, the assumption being that their is a correlation between these statistics and a writer's knowledge of the language. In some cases word length has been combined with other language specific data resulting in more effective models for specific circumstances. For example, Renjui and Chu combine word length with word-final tones motifs and segment-final motifs to improve author prediction in Chinese texts \cite{Renkui and Chu}.
-Given that author detection is not the present objective, we will see what, if anything, these methods can teel us about the Bah\'{a}'u'llah's writing style. But first...
+All three techniques have been used as a means of author detection while the first two have also been used, cautiously, to measure the writing ability of authors, the assumption being that their is a correlation between these statistics and a writer's knowledge of the language.
+In some cases word length has been combined with other language specific data resulting in more effective models for specific circumstances.
+For example, Renjui and Chu combine word length with word-final tones motifs and segment-final motifs to improve author prediction in Chinese texts \cite{renkui_stylometric_nodate}.
+Given that author detection is not the present objective, we will see what, if anything, these methods can tell us about Bah\'{a}'u'llah's writing style. But first there are some potential problems with applying these methods in the Arabic language that must be noted.
 \par
-Word length in Arabic, however, has one problem that should be noted. The partical `waw`, a single letter meaning and, is frequently found in all Arabic writing. Using waw frequently would not have the same effect in Arabic as the frequent use of `and' in English. The former is perfectly acceptable, whereas, the latter would be considered poor style. Given the lack of punctuation in classical Arabic the `waw` often functioned as a combination of the English `and', as well as `comma', and `period`. The problem for determining word length is that it is inconsistently adjoined with the succeeding word without a space in between them. Thus instead of having many words of length one, a significant portion of these `waws' are merged with other words. This, like the oxford comma in English, could be an effect of either author style or a side effect introduced when the physical text was made digital. This is consistently the case with the writings of the B\'{a}b sampled here-there are no words of lenght one-and inconsistently the case with the writings of al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}}, indicating probably the compilation of his writings from different sources. The impact of this is unclear and beyond the scope of this study, given that author detection is not the objective. This point does serve, however, as another example of the need for careful consideration of the history and circumstances surrounding the development of a language and the production of literary works.
-
-
+Word length and lexical richness will both be effected by formatting inconsistensies related to the partical `waw`, a single letter meaning `and', which is frequently found in all Arabic writing. Using `waw' frequently would not have the same effect in Arabic as the frequent use of `and' in English.
+The former is perfectly acceptable, whereas, the latter would be considered poor style.
+Given the lack of punctuation in classical Arabic the `waw` often functioned as a combination of the English `and', `comma', and `full stop`.
+The problem for determining word length is that it is inconsistently adjoined with the succeeding word without a space in between them.
+Thus instead of having many words of length one, a significant portion of these `waws' are merged with the following words.
+This, like the oxford comma in English, could be an effect of either author style or a side effect introduced when the physical text was made digital.
+This is consistently the case with the writings of the B\'{a}b sampled here \autoref{fig:word-length-bab}-there are no words of length one-and inconsistently the case with the writings of al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i} \autoref{fig:word-length-murtada-ansari}, indicating, probably, the compilation of his writings from different sources.
+The full extent to which this will impact these metrics is unclear and beyond the scope of this study.
+At the very least it would inflate word lengths, diminish word counts, and skew lexical richness through the addition of many fake words.
+Though this would be inconsistent accross authors, making comparative inquiries particularly risky.
+This point serves as another example of the need for careful consideration of the history and circumstances surrounding the development of a language and the production of literary works.
+\par
+Another way in which the Arabic language challenges all down stream tasks is through notoriously intractable tokenization. In English, and most Western languages, dealing with punctuation and splitting on whitespace is sufficient to segment larger chuncks of text into words. Tokenization is much more complicated in Arabic due to its morphological complexity which is realized through ``concatenative (affixes and stems) and templatic (root and patterns) morphology \cite{habash_arabic_2006}.'' More importantly, tokenization techniques are domain dependent; if the test set differs from the training set, the tokenizer will perform poorly \cite{sajjad_challenging_2017}, \cite{habash_arabic_2006}. This is particularly ominous for those working with the Bah\'{a}'\'{i} writings; given that the style of writing can change in so many unanticipated ways, constructing a training test that is representative of the entire corpus would be a major undertaking. The inconsistent spelling of certain characters–variants of Hamzated Alif, أ or إ are frequently written without their Hamza (ء)-further complicates tokentization by increasing ``sparsity (multiple forms of the same word) and ambiguity (same form corresponding to multiple words) \cite{habash_arabic_2006}.'' These characteristics could impact word counts and lexical richness statistics and, as in the case of the `waw' problem described above, would add increased risk in comparative studies between corpora from different domains or that have been digitized and compiled through different processes. One would need to take added precautions to investigate the history of the corpora and somehow account for the impact inconsistent tokenization performance might have on the process in order to avoid drawring unwarranted or misleading conclusions from unnoticed tokenization inconsistencies between the corpora.
+\par
+The basic inputs of the chi-squared method are token counts and thus use of the metric entails similar problems. Briefly given a text of unknown authorship and two suspected authors the method would be applied as follows (modified from the algorithm found in \cite{laramee_introduction_2018}):
+\begin{itemize}
+\item Gather writing samples for each suspected author into author specific corpora.
+\item Merge the corpora into a single corpus, resulting in three corpora: one for each author plus a combined corpus.
+\item Count the tokens for each of the words that can be found in the combined corpus.
+\item Select the n most common words in the combined corpus.
+\item Calculate how many tokens of these n most common words we would have expected to find in each of the two author specific corpora if they had come from the same author. This simply means dividing the number of tokens that we have observed in the combined corpus into two values, based on the relative sizes of the two authors’ contributions to the common corpus.
+\item Calculate a chi-squared distance by summing, over the n most common words, the squares of the differences between the actual numbers of tokens found in each author’s corpus and the expected numbers, divided by the expected numbers.
+\end{itemize}
+\par
+Lexican richness and chi-squared, like most other algorithims used in computational linguistics, are built up from word counts, which relies on successful tokenization as a preprocessing step. Given the risks described above and the tenuous value to the present study, lexical richness and chi-squared metrics, are not worth the effort they would require. In order to trust the results significant work would be required to research tokenization strategies, apply different strategies to each corpus, and analyze the effect each strategy might have had on the output. The fruit of such effort would be statistical evidence that could shed light on how Bah\'{a}'u'llah's writing style compares to contemporary authors, evidence that would, in turn, be used to determine a preprocessing strategy for the Bah\'{a}'\'{i} corpus. Let us explore some of the challenges expressed above, to the extent possible, through an examination of word count data for individual authors.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=15cm]{figures/word-length-bahaullah.png}
 	\caption[Most common word lengths used by Bah\'{a}'u'llah]{Most common word lengths used by Bah\'{a}'u'llah}
 	\label{fig:word-length-bahaullah}
 \end{figure}
-For example, a quick comparison of the word length data on Bah\'{a}'u'llah \autoref{fig:word-length-bahaullah} with that of the B\'{a}b \autoref{fig:word-length-bab} and `Abdu'l-Bah\'{a} \autoref{fig:word-length-abdulbaha} reveals that the trends for the first two are strickingly similar while the trend of the latter favors longer words. This could be evidence of the relative levels of education each recieved. While none of them had much in the way of formal schooling, `Abdu'l-Bah\'{a} served as a scribe for His father, Bah\'{a}'u'llah, and would have received some training through this service. Moreover, a cursory review of some of `Abdu'l-Bah\'{a}'s writings such as `Some Answered Questions' and His talks in the west published in `Abdu'l-Bah\'{a} in London' \cite{}, `Paris Talks'\cite{}, and `Promulgation of Universal Peace' \cite{} indicates that He was well read and conversant in many topics familiar to educated westerners.
+A quick comparison of the word length data on Bah\'{a}'u'llah \autoref{fig:word-length-bahaullah} with that of the B\'{a}b \autoref{fig:word-length-bab} and `Abdu'l-Bah\'{a} \autoref{fig:word-length-abdulbaha} reveals that the trends for the first two are strickingly similar while the trend of the latter favors longer words. This could be evidence of the relative levels of education each recieved. While none of them had much in the way of formal schooling, `Abdu'l-Bah\'{a} served as a scribe for His father, Bah\'{a}'u'llah, and would have received some training through this service. Moreover, a cursory review of some of `Abdu'l-Bah\'{a}'s writings such as `Some Answered Questions' and His talks in the west published in `Abdu'l-Bah\'{a} in London' \cite{abdul-baha_abdul-baha_1982}, `Paris Talks'\cite{abdul-baha_paris_nodate}, and `Promulgation of Universal Peace' \cite{abdul-baha_promulgation_1982} indicates that He was well read and conversant in many topics familiar to educated westerners.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=15cm]{figures/word-length-bab.png}
@@ -267,8 +303,22 @@ His word length also trends toward the longer side.
 	\caption[Most common word lengths used by al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}]{Most common word lengths used by al-Shaykh Murtaḍ\'{a} al-\'{A}ns\'{a}r\'{i}}
 	\label{fig:word-length-murtada-ansari}
 \end{figure}
+
+
+
+
+Joining the `waw' to the succeeding word has the potential to significantly diminish the word count of a text while significantly increasing the number of unique words.
+
+
+
+
+
 \par
 An even more impressive example of Bah\'{a}'u'llah's literary awareness and His ability to write with precision can be found in the Hidden Words \cite{bahaullah_hidden_2002}. At the time of the revelation of the Hidden Words (1857) Bahá'u'lláh's audience–the inhabitants of Baghdad specifically, though it is clear that He had a much wider audience in mind–would have been divided into four discrete groups: Sunni, Shi'i, Wujudies and Shuhudis. Each of these, in turn, would be divided into opposing factions: Akhbaris, Usulis, and Shaykhis \cite{lawson_todd_globalization_2005}. Bah\'{a}'u'llah wrote the Hidden Words in such a way that it would appeal to each faction. Quotations are woven throughout in paraphrase, there is no mention of a proper name that could signal an allegiance to any faction, no isnads, no legalistic doctrines or cultic pronouncements \cite{lawson_todd_globalization_2005}. What remains is something that could be seen by all as pure religion. ``A religion apparently unencumbered by the tragedy of history, appearing as a restatement of basic truths through the medium of a compelling religious literary art in both languages of the city: Arabic (71 `verses' and Persian (82 `verses') \cite{lawson_todd_globalization_2005}.'' Such an accomplishment is extraordinary given the sectarian nature of the religious discourse of 19th century Baghdad. Moreover, it shows a profound awareness of the discourse of each faction; in order to know which words to avoid, Bah\'{a}'u'llah had to be aware of catchwords prevalent in the discourse of each group. This work serves as a subtle, yet profound, reminder of Bah\'{a}'u'llah's linguistic ability. It demonstrates a clear intent to elevate the minds of His audience the prevalent sectarian discourse and serves as a profound example of His linguistic command.
+\par
+It also seems to have been revealed without solicitation by Bah\'{a}'u'llah, meaning He was not acquiesing to the request of any individual person. This is significant for the interpretation of the work in that it represents, perhaps more than other works, the intention of its Author.
+
+Consider the circumstances of its revelation: Was it unprompted.
 \par
 Write closing paragraph tying this discussion to the thesis on the need for local strategies.
 
@@ -313,7 +363,6 @@ Work number 2 found 9\% of the words in the Arabic vocabulary but these words co
 The other words are clearly of Persian origin; their inclusion in the intersection of the Venn diagram \autoref{fig:venn-pers} must be attributed to their appearance in an Arabic work or, possibly, to a mislabelling of one or more files.
 Work number 3 is of the same type; all words except the word `ism' are of Persian origin.
 \begin{wrapfigure}{r}{.5\textwidth}
-	\centering\captionsetup[subfigure]{justification=centering}
 	\includegraphics[width=\linewidth]{figures/venn-persian.png}
 	\caption[Venn diagram with Persian section highlighted]{Pure Persian works can be identified by querying for works with vocabulary situated largely in the Persian section}\label{fig:venn-pers}
 \end{wrapfigure}
