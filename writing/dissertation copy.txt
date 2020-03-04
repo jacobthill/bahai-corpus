@@ -40,7 +40,7 @@ citestyle=numeric
 		\vspace{1in}
 		Jacob Timothy Hill\\
 		\vspace{1in}
-		A dissertation submitted to the faculty at the University of North Carolina at Chapel Hill in partial fulfillment of the requirements for the degree of Doctor of Philosophy in the School of Information and Library Science.\\
+		A disertation submitted to the faculty at the University of North Carolina at Chapel Hill in partial fulfillment of the requirements for the degree of Doctor of Philosophy in the School of Information and Library Science.\\
 		\vspace{1in}
 		Chapel Hill\\
 		2020
@@ -73,56 +73,36 @@ citestyle=numeric
 \listoffigures
 \chapter{Introduction}
 \pagenumbering{arabic}
-Overall argument: We are applying algorithms developed for information science and computer science tasks to humanities tasks and this is problematic because it requires significantly more interrogation of the process, the bias in the data (text encoding, archival bias e.g. whats included and not included, etc.).
+Overall argument: We are applying algorithms developed for information science and computer science tasks to humanities tasks and this is problematic because it requires significantly more interogation of the process, the bias in the data (text encoding, archival bias e.g. whats included and not included, etc.).
 
-When moving into a new field like digital humanities it is important to explore some questions related to methodological fit. These explorations have to be done for different fields and different problems. We can't have one solution for all humanities problems. The kind of work done thus far relates to some basic explorations of the application of algorithms to humanities problems, often without a clear idea of how to interpret the results, as well as some NLP work that addresses issues related to Arabic and Persian corpora. Before applying NLP problems to Bah\'{a}'\'{i} texts it is important to contextualize the problems which entails framing them in such a way that computer scientists and humanists, to adopt an overly simplistic schema of the audience, can engage in a common conversation.
-
-Need evaluation methods that take into consideration the basic “quality” of the word vectors without losing site of the object of interest.
-
+When moving into a new field like Digital Humanities it is important to explore some questions related to methodological fit. These explorations have to be done for different fields and different problems. We can't have one solution for all humanities problems. The kind of work done thus far relates to some basic explorations of the application of algorithms to humanities problems, often without a clear idea of how to interpret the results, as well as some NLP work that addresses issues related to Arabic and Persian corpora. Before applying NLP problems to Bahá'í texts it is important to contextualize the problems which entails framing them in such a way that computer scientists and humanists, to adopt an overly simplistic schema of the audience, can engage in a common conversation.
 \chapter{Literature Review}
 
 \chapter{The Linguistic Setting}
 \par
 Among the challenges in applying algorithms developed by computer and information scientists to humanities problems is that there is an, often unnoticed or underappreciated, shift in context that requires reckoning.
-In machine learning research the data set and evaluation methods are generally treated as controlled variables or benchmarks for testing algorithms.
-In humanities research the data set---the use of language within a given social and historical context---is the thing of interest.
-A simple inversion of this relationship (treating the algorithms as controlled variables and substituting data sets) could lead to significant problems.
-This is the likely point of departure for most humanists in learning to program and examine old problems through new lenses but it cannot be the standard for digital humanities research.
-It must, in time, give way to a more careful inquiry into the inputs, transformation processes, and outputs of each step in the algorithm.
+In machine learning research the data set and evaluation methods are often treated as controlled variables or benchmarks for testing algorithms.
+In humanities research the data set–the use of language within a given social and historical context–is the thing of interest. A simple inversion of this relationship (treating the algorithms as controlled variables and substituting data sets) could lead to disasterous.
+This is the likely point of departure for most humanists in learning to program and examine old problems through new lenses but it cannot be the standard for Digital Humanities research.
 \par
-Humanists must begin to think more like computer scientists.
-They must learn to deconstruct algorithms into their common components and understand how and why these components are recycled and exchanged to build new algorithms.
-These skills are required in order to know which algorithms to apply to a given problem and how subtle changes might impact the results in significant ways.
-They must also learn to apply traditional humanities scholarship towards an interrogation of the processes through which their data came to be---historical, cultural, political processes that might have significant bearing on the choice of algorithms.
+This approach must give way to a more careful inquiry into the inputs, transformation processes, and outputs of each step in the algorithm. Humanists must begin to think more like computer scientists. They must learn to break down various algorithms into their common components and reckongize how and why these components are recycled and exchanged to build new algorithms. These skills are required in order to know which algorithms to apply to a given problem.
 \par
-The problem articulated above can be more succinctly described as a need for local language models in humanities research.
-Language can change in meaningful ways across time, place, and storage medium.
-These changes need to be accounted for in computational linguistics research.
-In computer science articles they are often considered in detail when a data set is prepared and then relegated to a footnote thereafter, never to be considered again.
-This is perfectly reasonable given the interest of computer scientists in algorithm design.
-But humanists are frequently in the position of constructing new, or refactoring existing, datasets and exploring these datasets through the lenses of various algorithms.
-At times they may need to change existing algorithms or tune parameters in order to apply them to new ends.
-To do so safely an account of the data set and algorithms must be given, an account that enables readers to peer into the often invisible sequence of decisions that led to the reported results.
+Humanists must also learn to apply traditional humanities scholarship to new ends. They must use these skills to interogate the processes through which their data came to be-historical, cultural, political processes that might have significant bearing on the choice of algorithms.
 \par
-The current chapter aims to articulate some of the complexities of the Arabic and Persian language as well as the Bah\'{a}'\'{i} writings.
-Many of the former are well known to those computational linguists who work with these languages.
-Some of the latter will also be known to Bah\'{a}'\'{i} scholars well read in the core writings of the Bah\'{a}'\'{i} Faith.
-No attempt has been made, however, to mediate the two worlds.
-There are no Bah\'{a}'\'{i} scholars using computational linguistics as a research methodology, nor any digital librarians using computational linguistics to improve access and discovery.
-\par
-The Bah\'{a}'\'{i} writings are something of a linguistic anomaly in that, within the corpus of a single author, the style of writing, the use of language, can shift dramatically from one text to another, even within a single text.
-The writings of Bah\'{a}''u'll\'{a}h exhibit this characteristic throughout.
-Few writers have such a wide ranging audience in mind or adapt so much to the linguistic biases of their audience.
-Bah\'{a}''u'll\'{a}h's writings sway between elevated Arabic and vernacular Persian, including everything in between.
-The style and choice of words is often the result of deference to the sensitivities of the recipient of the text.
+Need evaluation methods that take into consideration the basic “quality” of the word vectors without losing site of the object of interest.
+
+The problem with global language models and the need for local models.
+
+The shift in context from computer science to humanities research (e.g. the focus of the study).
+
+The complexities of the Arabic and Persian language.
+
+The Bah\'{a}'\'{i} writings are something of a linguistic anomaly.
+
+Few writers have such a wide ranging audience in mind or adapt so much to the linguistic capacities/leanings of their audience.
 \section{The ``Raw'' Data}
 \par
-The sample of Bah\'{a}'\'{i} writings used in this study consists of nearly everything available on the authorized website of the Universal House of Justice (www.reference.bahai.org)---the elected governing body of the international Bah\'{a}'\'{i} community---with the exception of some early scholarly attempts to compile the Bah\'{a}'\'{i} writings, such as those of `Abdu'l-Ham\'{i}d Ishr\'{a}q-Kh\'{a}vari, and a few other largely derivative compilations.
-Including the former would require significant manual labor to separate the words of the author from the passages of Bah\'{a}'\'{i} scripture he compiles.
-Including the latter would add duplicate text, possibly skewing the results of the study through the multiplication of commonly occurring passages.
-Volumes consisting of scanned images without machine readable text were naturally excluded because of the significant work required to prepare them for computation.
-For a list of all published volumes included in the present study see \nameref{app-1}.
-For a relational view of the number of works in the sample compared to all extant works see \autoref{fig:works-table}.
+The sample of Bah\'{a}'\'{i}  writings used in this study consists of nearly everything available on the authorized website of the Universal House of Justice (www.reference.bahai.org)–the elected governing body of the international  Bah\'{a}'\'{i} community–with the exception of some early scholarly attempts to compile the Bah\'{a}'\'{i} writings, such as those of `Abdu'l-Ham\'{i}d Ishr\'{a}q-Kh\'{a}vari, and a few largely derivative compilations. Including the former would require significant manual labor to separate the words of the author from the passages of Bah\'{a}'\'{i} scripture he compiles. Including the latter would add duplicate text, possibly skewing the results of the study through the multiplication of commonly occurring passages. Volumes consisting of scanned images without machine readable text were naturally excluded because of the significant work required to prepare them for computation. For a list of all published volumes included in the present study see \nameref{app-1}. For a relational view of the number of works in the sample compared to all extant works see \autoref{fig:works-table}.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=15cm]{figures/works-table.png}
@@ -130,24 +110,13 @@ For a relational view of the number of works in the sample compared to all extan
 \label{fig:works-table}
 \end{figure}
 \par
-The individual Bah\'{a}'\'{i} works were parsed from the published volumes listed in \nameref{app-1} and labeled with author and language (Arabic or Persian).
-This binary linguistic labeling at the level of the work may be somewhat misleading given the fluidity of language that is characteristic of the Bah\`{a}'\'{i} writings.
-A more granular labeling strategy---say at the level of the sentence or paragraph---though ideal, would require an unreasonable increase in manual labor.
-By way of compromise, the works labeled `Arabic' are fully Arabic. The occasional Persian word, or Persianized Arabic word, may slip in but the general structure is Arabic.
-There are no Persian sentences, prepositions, or pronouns.
-Works were labeled manually, checked computationally, reinspected and relabeled when necessary.
-The checking step consisted of generating a list of high frequency Persian words, which included all prepositions and pronouns, and iteratively searching each Arabic text for words in this list.
-If the Arabic text contained any of the high frequency Persian words, it was reinspected and, if necessary, relabeled.
+The individual Bah\'{a}'\'{i} works were parsed from the published volumes listed in \nameref{app-1} and labelled with author and language (Arabic or Persian). This binary linguistic labelling at the level of the work may be somewhat misleading given the fluidity of language that is charicteristic of the Bah\`{a}'\'{i} writings. A more granular labelling strategy-say at the level of the sentence or paragraph-though ideal, would require an exponential increase in manual labor. By way of compromise, the works labelled `Arabic' are fully Arabic. The occasional Persian word, or Persianized Arabic word, may slip in but the general structure is Arabic. There are no Persian sentences, prepositions, or pronouns. Works were labelled manually, checked computationally, reinspected and relabelled if necessary. The checking step consisted of generating a list of high frequency Persian words, which included all prepositions and pronouns, and iteratively searching each Arabic text for words in this list. If the Arabic text contained any of the high frequency Persian words, it was reinspected and, if necessary, relabelled.
 \par
-This labeling strategy is justified by historical and cultural precedent.
-Persians, being largely Muslim, were expected to have some knowledge of the Arabic language---the language of the Qur'\'{a}n
-Arab Muslims had no impetus for learning Persian, except the minority who lived in Iran.
-The impact of this cultural and historical phenomenon on the Bah\'{a}'\'{i} corpus is discernible in the larger number of wholly Arabic works---particularly among earlier authors---as well as the frequency of lengthy Arabic passages in most Persian works.
-There are a significant number of Persian works without Arabic passages, but given the expectation that Persian readers would know some Arabic, the appearance of large segments of Arabic text in Persian works is commonplace.
+This labelling strategy is justified by historical and cultural precedent. Persians, being largely Muslim, were expected to have some knowledge of the Arabic language–the language of the Qur'\'{a}n. Arab Muslims, on the other hand, were not expected to learn Persian. The impact of this cultural and historical phenomenon on the Bah\'{a}'\'{i} corpus is discernible in the larger number of wholly Arabic works–particularly among earlier among the earlier authors–as well as the frequency of lengthy Arabic passages in most Persian works. There are a significant number of Persian works without Arabic passages, but given the expectation that Persian readers would know some Arabic, the appearance of large segments of Arabic text in Persian works is commonplace.
 \par
 The implications of such a strategy are that the total number of Arabic and Persian words are skewed towards Persian (there are 706,426 Arabic words compared to 1,906,607 Persian). Most of the ``Persian'' works contain large sections of Arabic text which gets counted in the Persian word count. This, unfortunately, is unavoidable given that a more granular labelling approach is not presently feasible.
 \par
-In order to provide context, a large corpus of contemporary texts were selected for comparison, which included a collection of over 60,000 Persian poems (``and a few prose texts'') prepared by the Persian Digital Library Pilot Project (PDL) \cite{noauthor_persian_nodate} and nearly 350 lengthy Arabic works from the `Knowledge, Information Technology and the Arabic Book' (KITAB) \cite{maxim_romanov_openiti:_2019}. The selections from the KITAB project were limited to works from the 12th-14th centuries AH (October 26, 1688-November 21, 1979) which is roughly contemporaneous with the Bah\'{a}'\'{i} works sampled. All works in the PDL corpus were added without exception while works in the KITAB corpus that contained Persian passages were removed to maintain consistency with the linguistic labelling strategy applied to the Bah\'{a}'\'{i} corpus.
+In order to provide context, a lrge corpus of contemporary texts were selected for comparison, which included a collection of over 60,000 Persian poems (``and a few prose texts'') prepared by the Persian Digital Library Pilot Project (PDL) \cite{noauthor_persian_nodate} and nearly 350 lengthy Arabic works from the `Knowledge, Information Technology and the Arabic Book' (KITAB) \cite{maxim_romanov_openiti:_2019}. The selections from the KITAB project were limited to works from the 12th-14th centuries AH (October 26, 1688-November 21, 1979) which is roughly contemporaneous with the Bah\'{a}'\'{i} works sampled. All works in the PDL corpus were added without exception while works in the KITAB corpus that contained Persian passages were removed to maintain consistency with the linguistic labelling strategy applied to the Bah\'{a}'\'{i} corpus.
 \section{Side Effects of Text Encoding}
 \par
 All computational linguistic work requires some level of pre-processing. There are several considerations that are peculiar to languages written in a modified form of the Arabic script. One such problem is the existence of ambiguous characters-characters with the same form, but different encodings \cite{jaf_semi-automatic_2016}. These characters appear the same to the human eye but have different underlying encodings. What appears to be the same letter in Persian and Arabic–the letter k\`{a}f for example–may in fact be two distinct encodings. Failure to conflate ambiguous characters results in the proliferation of vocabulary; a significant number of words that appear the same to the reader and were intended to be the same by the writer are treated as different words by the computer. Failure to remediate this issue prior to any down stream tasks can have significant negative effects on the outcome of those tasks. \begin{wrapfigure}{r}{.5\textwidth}
