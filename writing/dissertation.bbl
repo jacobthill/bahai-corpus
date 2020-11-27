@@ -164,6 +164,382 @@
     \field{year}{2016}
   \endentry
 
+  \entry{justin_rice_what_2018}{online}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Justin Rice}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{titleaddon}{Litcharts.com}
+    \field{title}{What Makes Hemingway Hemingway?}
+    \verb{url}
+    \verb https://www.litcharts.com/blog/analitics/what-makes-hemingway/
+    \endverb
+    \verb{file}
+    \verb What Makes Hemingway Hemingway? - LitCharts:/Users/jtim/Zotero/storag
+    \verb e/RX2P77SP/what-makes-hemingway.html:text/html
+    \endverb
+    \field{day}{03}
+    \field{month}{01}
+    \field{year}{2018}
+    \field{urlday}{16}
+    \field{urlmonth}{11}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{genette_gerard_palimpsests:_1997}{book}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{Genette, Gérard}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Nebraska Press}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{volume 8}
+    \field{series}{Stages}
+    \field{title}{Palimpsests: Literature in the Second Degree}
+    \list{location}{2}{%
+      {Lincoln}%
+      {London}%
+    }
+    \field{year}{1997}
+  \endentry
+
+  \entry{renkui_stylometric_nodate}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RH}{%
+         family={Renkui},
+         familyi={R\bibinitperiod},
+         given={Hou},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={Huang},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RHCH1}
+    \strng{fullhash}{RHCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We propose a new approach to stylometric analysis combining lexical and
+  textual information, but without annotation or other pre-processing. In
+  particular, our study makes use Chinese tones motifs and word length motifs
+  automatically extracted from unannotated texts. The proposed approach is
+  based on linked data in nature as tone and word-length information is
+  extracted from a lexicon and mapped to the text. Support vector machine and
+  random forest were used to establish the classification models for author
+  differentiation. Based on comparative study of classification results of
+  different models, we conclude that the combination of word-final tones
+  motifs, segment-final motifs and word length motifs provides the best outcome
+  and hence is the best model.%
+    }
+    \field{pages}{8}
+    \field{title}{Stylometric Studies based on Tone and Word Length Motifs}
+    \field{langid}{english}
+    \verb{file}
+    \verb Renkui and Chu - Stylometric Studies based on Tone and Word Length .p
+    \verb df:/Users/jtim/Zotero/storage/4DUXATRH/Renkui and Chu - Stylometric S
+    \verb tudies based on Tone and Word Length .pdf:application/pdf
+    \endverb
+  \endentry
+
+  \entry{habash_arabic_2006}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Habash},
+         familyi={H\bibinitperiod},
+         given={Nizar},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sadat},
+         familyi={S\bibinitperiod},
+         given={Fatiha},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{HNSF1}
+    \strng{fullhash}{HNSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this paper, we study the effect of different word-level preprocessing
+  decisions for Arabic on {SMT} quality. Our results show that given large
+  amounts of training data, splitting off only proclitics performs best.
+  However, for small amounts of training data, it is best to apply English-like
+  tokenization using part-of-speech tags, and sophisticated morphological
+  analysis and disambiguation. Moreover, choosing the appropriate preprocessing
+  produces a signiﬁcant increase in {BLEU} score if there is a change in
+  genre between training and test data.%
+    }
+    \field{booktitle}{Proceedings of the Human Language Technology Conference
+  of the {NAACL}, Companion Volume: Short Papers on {XX} - {NAACL} '06}
+    \verb{doi}
+    \verb 10.3115/1614049.1614062
+    \endverb
+    \field{eventtitle}{the Human Language Technology Conference of the {NAACL},
+  Companion Volume: Short Papers}
+    \field{pages}{49\bibrangedash 52}
+    \field{title}{Arabic preprocessing schemes for statistical machine
+  translation}
+    \verb{url}
+    \verb http://portal.acm.org/citation.cfm?doid=1614049.1614062
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York, New York}%
+    }
+    \verb{file}
+    \verb Habash and Sadat - 2006 - Arabic preprocessing schemes for statistica
+    \verb l machi.pdf:/Users/jtim/Zotero/storage/X52GXQAN/Habash and Sadat - 20
+    \verb 06 - Arabic preprocessing schemes for statistical machi.pdf:applicati
+    \verb on/pdf
+    \endverb
+    \field{year}{2006}
+    \field{urlday}{27}
+    \field{urlmonth}{02}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{sajjad_challenging_2017}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=SH}{%
+         family={Sajjad},
+         familyi={S\bibinitperiod},
+         given={Hassan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Dalvi},
+         familyi={D\bibinitperiod},
+         given={Fahim},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Durrani},
+         familyi={D\bibinitperiod},
+         given={Nadir},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Abdelali},
+         familyi={A\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Belinkov},
+         familyi={B\bibinitperiod},
+         given={Yonatan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vogel},
+         familyi={V\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{SHDFDNAABYVS1}
+    \strng{fullhash}{SHDFDNAABYVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Word segmentation plays a pivotal role in improving any Arabic {NLP}
+  application. Therefore, a lot of research has been spent in improving its
+  accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii)
+  domain/dialect dependent. We explore three language-independent alternatives
+  to morphological segmentation using: i) data-driven sub-word units, ii)
+  characters as a unit of learning, and iii) word embeddings learned using a
+  character {CNN} (Convolution Neural Network). On the tasks of Machine
+  Translation and {POS} tagging, we found these methods to achieve close to,
+  and occasionally surpass state-of-the-art performance. In our analysis, we
+  show that a neural machine translation system is sensitive to the ratio of
+  source and target tokens, and a ratio close to 1 or greater, gives optimal
+  performance.%
+    }
+    \field{booktitle}{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics (Volume 2: Short Papers)}
+    \verb{doi}
+    \verb 10.18653/v1/P17-2095
+    \endverb
+    \field{eventtitle}{Proceedings of the 55th Annual Meeting of the
+  Association for Computational Linguistics (Volume 2: Short Papers)}
+    \field{pages}{601\bibrangedash 607}
+    \field{shorttitle}{Challenging Language-Dependent Segmentation for Arabic}
+    \field{title}{Challenging Language-Dependent Segmentation for Arabic: An
+  Application to Machine Translation and Part-of-Speech Tagging}
+    \verb{url}
+    \verb http://aclweb.org/anthology/P17-2095
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Vancouver, Canada}%
+    }
+    \verb{file}
+    \verb Sajjad et al. - 2017 - Challenging Language-Dependent Segmentation fo
+    \verb r Ar.pdf:/Users/jtim/Zotero/storage/8NYMGPT3/Sajjad et al. - 2017 - C
+    \verb hallenging Language-Dependent Segmentation for Ar.pdf:application/pdf
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{27}
+    \field{urlmonth}{02}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{abdul-baha_answered_1990}{book}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{'Abdu'l-Bahá}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{US} Bahá'í Publishing Trust}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{305}
+    \field{title}{Some Answered Questions}
+    \verb{url}
+    \verb http://reference.bahai.org/en/t/ab/SAQ/
+    \endverb
+    \verb{file}
+    \verb Bahá'í Reference Library - Some Answered Questions:/Users/jtim/Zote
+    \verb ro/storage/Q4WGZATS/SAQ.html:text/html
+    \endverb
+    \field{year}{1990}
+    \field{urlday}{16}
+    \field{urlmonth}{05}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{abdul-baha_abdul-baha_1982}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={'Abdu'l-Bahá},
+         familyi={A\bibinitperiod-B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{UK} Bahá’í Publishing Trust}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{127}
+    \field{title}{'Abdu'l-Bahá in London}
+    \field{year}{1982}
+  \endentry
+
+  \entry{abdul-baha_paris_nodate}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={'Abdu'l-Bahá},
+         familyi={A\bibinitperiod-B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Paris Talks}
+    \verb{url}
+    \verb https://www.bahai.org/library/authoritative-texts/abdul-baha/paris-ta
+    \verb lks/
+    \endverb
+  \endentry
+
+  \entry{abdul-baha_promulgation_1982}{book}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{'Abdu'l-Bahá}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{US} Bahá’í Publishing Trust}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pagetotal}{470}
+    \field{title}{The Promulgation of Universal Peace}
+    \field{volume}{1}
+    \field{year}{1982}
+  \endentry
+
+  \entry{abd_al-hadi_hairi_shiism_1977}{book}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Abd al-Hādī Ḥāʼirī}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {E.J. Brill}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Shīʿīsm and Constitutionalism in Iran: A Study of the Role
+  Played by the Persian Residents of Iraq in Iranian Politics}
+    \list{location}{1}{%
+      {Leiden}%
+    }
+    \verb{file}
+    \verb Shīʿīsm and Constitutionalism in Iran\: A Study of the Role Played
+    \verb  by the ... - ʻAbd al-Hādī Ḥāʼirī - Google Books:/Users/jtim/
+    \verb Zotero/storage/QBZ9YPRB/books.html:text/html
+    \endverb
+    \field{year}{1977}
+  \endentry
+
+  \entry{bahaullah_summons_nodate}{book}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Bahá'u'lláh},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Summons of the Lord of Hosts: Tablets of Bahá'u'lláh}
+    \verb{file}
+    \verb Bahá'u'lláh - The Summons of the Lord of Hosts Tablets of Bahá'.pd
+    \verb f:/Users/jtim/Zotero/storage/VR3VPM2F/Bahá'u'lláh - The Summons of
+    \verb the Lord of Hosts Tablets of Bahá'.pdf:application/pdf
+    \endverb
+  \endentry
+
   \entry{bahaullah_call_nodate}{book}{}
     \name{author}{1}{}{%
       {{hash=B}{%
@@ -377,461 +753,6 @@
     \field{year}{2002}
   \endentry
 
-  \entry{justin_rice_what_2018}{online}{}
-    \name{author}{1}{}{%
-      {{hash=J}{%
-         family={{Justin Rice}},
-         familyi={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{J1}
-    \strng{fullhash}{J1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{titleaddon}{Litcharts.com}
-    \field{title}{What Makes Hemingway Hemingway?}
-    \verb{url}
-    \verb https://www.litcharts.com/blog/analitics/what-makes-hemingway/
-    \endverb
-    \verb{file}
-    \verb What Makes Hemingway Hemingway? - LitCharts:/Users/jtim/Zotero/storag
-    \verb e/RX2P77SP/what-makes-hemingway.html:text/html
-    \endverb
-    \field{day}{03}
-    \field{month}{01}
-    \field{year}{2018}
-    \field{urlday}{16}
-    \field{urlmonth}{11}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{genette_gerard_palimpsests:_1997}{book}{}
-    \name{author}{1}{}{%
-      {{hash=G}{%
-         family={{Genette, Gérard}},
-         familyi={G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {University of Nebraska Press}%
-    }
-    \strng{namehash}{G1}
-    \strng{fullhash}{G1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{volume 8}
-    \field{series}{Stages}
-    \field{title}{Palimpsests: Literature in the Second Degree}
-    \list{location}{2}{%
-      {Lincoln}%
-      {London}%
-    }
-    \field{year}{1997}
-  \endentry
-
-  \entry{kilgarriff_comparing_2001}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KA}{%
-         family={Kilgarriff},
-         familyi={K\bibinitperiod},
-         given={Adam},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KA1}
-    \strng{fullhash}{KA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Corpus linguistics lacks strategies for describing and comparing corpora.
-  Currently most descriptions of corpora are textual, and questions such as
-  ‘what sort of a corpus is this?’, or ‘how does this corpus compare to
-  that?’ can only be answered impressionistically. This paper considers
-  various ways in which different corpora can be compared more objectively.
-  First we address the issue, ‘which words are particularly characteristic of
-  a corpus?’, reviewing and critiquing the statistical methods which have
-  been applied to the question and proposing the use of the Mann-Whitney ranks
-  test. Results of two corpus comparisons using the ranks test are presented.
-  Then, we consider measures for corpus similarity. After discussing
-  limitations of the idea of corpus similarity, we present a method for
-  evaluating corpus similarity measures. We consider several measures and
-  establish that a χ2-based one performs best. All methods considered in this
-  paper are based on word and ngram frequencies; the strategy is defended.%
-    }
-    \verb{doi}
-    \verb 10.1075/ijcl.6.1.05kil
-    \endverb
-    \field{issn}{1384-6655, 1569-9811}
-    \field{number}{1}
-    \field{pages}{97\bibrangedash 133}
-    \field{title}{Comparing Corpora}
-    \verb{url}
-    \verb http://www.jbe-platform.com/content/journals/10.1075/ijcl.6.1.05kil
-    \endverb
-    \field{volume}{6}
-    \field{langid}{english}
-    \verb{file}
-    \verb Kilgarriff - 2001 - Comparing Corpora.pdf:/Users/jtim/Zotero/storage/
-    \verb HVRJ5AB5/Kilgarriff - 2001 - Comparing Corpora.pdf:application/pdf
-    \endverb
-    \field{journaltitle}{International Journal of Corpus Linguistics}
-    \field{day}{31}
-    \field{month}{12}
-    \field{year}{2001}
-    \field{urlday}{26}
-    \field{urlmonth}{08}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{laramee_introduction_2018}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LFD}{%
-         family={Laramée},
-         familyi={L\bibinitperiod},
-         given={François\bibnamedelima Dominic},
-         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LFD1}
-    \strng{fullhash}{LFD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Introduction to stylometry with Python}
-    \verb{url}
-    \verb https://programminghistorian.org/en/lessons/introduction-to-stylometr
-    \verb y-with-python
-    \endverb
-    \field{langid}{english}
-    \verb{file}
-    \verb Snapshot:/Users/jtim/Zotero/storage/D6PZE6R5/introduction-to-stylomet
-    \verb ry-with-python.html:text/html
-    \endverb
-    \field{journaltitle}{Programming Historian}
-    \field{day}{21}
-    \field{month}{04}
-    \field{year}{2018}
-    \field{urlday}{31}
-    \field{urlmonth}{12}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{renkui_stylometric_nodate}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RH}{%
-         family={Renkui},
-         familyi={R\bibinitperiod},
-         given={Hou},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=CH}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={Huang},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RHCH1}
-    \strng{fullhash}{RHCH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    We propose a new approach to stylometric analysis combining lexical and
-  textual information, but without annotation or other pre-processing. In
-  particular, our study makes use Chinese tones motifs and word length motifs
-  automatically extracted from unannotated texts. The proposed approach is
-  based on linked data in nature as tone and word-length information is
-  extracted from a lexicon and mapped to the text. Support vector machine and
-  random forest were used to establish the classification models for author
-  differentiation. Based on comparative study of classification results of
-  different models, we conclude that the combination of word-final tones
-  motifs, segment-final motifs and word length motifs provides the best outcome
-  and hence is the best model.%
-    }
-    \field{pages}{8}
-    \field{title}{Stylometric Studies based on Tone and Word Length Motifs}
-    \field{langid}{english}
-    \verb{file}
-    \verb Renkui and Chu - Stylometric Studies based on Tone and Word Length .p
-    \verb df:/Users/jtim/Zotero/storage/4DUXATRH/Renkui and Chu - Stylometric S
-    \verb tudies based on Tone and Word Length .pdf:application/pdf
-    \endverb
-  \endentry
-
-  \entry{habash_arabic_2006}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=HN}{%
-         family={Habash},
-         familyi={H\bibinitperiod},
-         given={Nizar},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=SF}{%
-         family={Sadat},
-         familyi={S\bibinitperiod},
-         given={Fatiha},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computational Linguistics}%
-    }
-    \strng{namehash}{HNSF1}
-    \strng{fullhash}{HNSF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In this paper, we study the effect of different word-level preprocessing
-  decisions for Arabic on {SMT} quality. Our results show that given large
-  amounts of training data, splitting off only proclitics performs best.
-  However, for small amounts of training data, it is best to apply English-like
-  tokenization using part-of-speech tags, and sophisticated morphological
-  analysis and disambiguation. Moreover, choosing the appropriate preprocessing
-  produces a signiﬁcant increase in {BLEU} score if there is a change in
-  genre between training and test data.%
-    }
-    \field{booktitle}{Proceedings of the Human Language Technology Conference
-  of the {NAACL}, Companion Volume: Short Papers on {XX} - {NAACL} '06}
-    \verb{doi}
-    \verb 10.3115/1614049.1614062
-    \endverb
-    \field{eventtitle}{the Human Language Technology Conference of the {NAACL},
-  Companion Volume: Short Papers}
-    \field{pages}{49\bibrangedash 52}
-    \field{title}{Arabic preprocessing schemes for statistical machine
-  translation}
-    \verb{url}
-    \verb http://portal.acm.org/citation.cfm?doid=1614049.1614062
-    \endverb
-    \field{langid}{english}
-    \list{location}{1}{%
-      {New York, New York}%
-    }
-    \verb{file}
-    \verb Habash and Sadat - 2006 - Arabic preprocessing schemes for statistica
-    \verb l machi.pdf:/Users/jtim/Zotero/storage/X52GXQAN/Habash and Sadat - 20
-    \verb 06 - Arabic preprocessing schemes for statistical machi.pdf:applicati
-    \verb on/pdf
-    \endverb
-    \field{year}{2006}
-    \field{urlday}{27}
-    \field{urlmonth}{02}
-    \field{urlyear}{2020}
-  \endentry
-
-  \entry{sajjad_challenging_2017}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=SH}{%
-         family={Sajjad},
-         familyi={S\bibinitperiod},
-         given={Hassan},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=DF}{%
-         family={Dalvi},
-         familyi={D\bibinitperiod},
-         given={Fahim},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=DN}{%
-         family={Durrani},
-         familyi={D\bibinitperiod},
-         given={Nadir},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Abdelali},
-         familyi={A\bibinitperiod},
-         given={Ahmed},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Belinkov},
-         familyi={B\bibinitperiod},
-         given={Yonatan},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=VS}{%
-         family={Vogel},
-         familyi={V\bibinitperiod},
-         given={Stephan},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computational Linguistics}%
-    }
-    \strng{namehash}{SHDFDNAABYVS1}
-    \strng{fullhash}{SHDFDNAABYVS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{abstract}{%
-    Word segmentation plays a pivotal role in improving any Arabic {NLP}
-  application. Therefore, a lot of research has been spent in improving its
-  accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii)
-  domain/dialect dependent. We explore three language-independent alternatives
-  to morphological segmentation using: i) data-driven sub-word units, ii)
-  characters as a unit of learning, and iii) word embeddings learned using a
-  character {CNN} (Convolution Neural Network). On the tasks of Machine
-  Translation and {POS} tagging, we found these methods to achieve close to,
-  and occasionally surpass state-of-the-art performance. In our analysis, we
-  show that a neural machine translation system is sensitive to the ratio of
-  source and target tokens, and a ratio close to 1 or greater, gives optimal
-  performance.%
-    }
-    \field{booktitle}{Proceedings of the 55th Annual Meeting of the Association
-  for Computational Linguistics (Volume 2: Short Papers)}
-    \verb{doi}
-    \verb 10.18653/v1/P17-2095
-    \endverb
-    \field{eventtitle}{Proceedings of the 55th Annual Meeting of the
-  Association for Computational Linguistics (Volume 2: Short Papers)}
-    \field{pages}{601\bibrangedash 607}
-    \field{shorttitle}{Challenging Language-Dependent Segmentation for Arabic}
-    \field{title}{Challenging Language-Dependent Segmentation for Arabic: An
-  Application to Machine Translation and Part-of-Speech Tagging}
-    \verb{url}
-    \verb http://aclweb.org/anthology/P17-2095
-    \endverb
-    \field{langid}{english}
-    \list{location}{1}{%
-      {Vancouver, Canada}%
-    }
-    \verb{file}
-    \verb Sajjad et al. - 2017 - Challenging Language-Dependent Segmentation fo
-    \verb r Ar.pdf:/Users/jtim/Zotero/storage/8NYMGPT3/Sajjad et al. - 2017 - C
-    \verb hallenging Language-Dependent Segmentation for Ar.pdf:application/pdf
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{27}
-    \field{urlmonth}{02}
-    \field{urlyear}{2020}
-  \endentry
-
-  \entry{abdul-baha_abdul-baha_1982}{book}{}
-    \name{author}{1}{}{%
-      {{hash=AB}{%
-         family={'Abdu'l-Bahá},
-         familyi={A\bibinitperiod-B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{UK} Bahá’í Publishing Trust}%
-    }
-    \strng{namehash}{AB1}
-    \strng{fullhash}{AB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pagetotal}{127}
-    \field{title}{'Abdu'l-Bahá in London}
-    \field{year}{1982}
-  \endentry
-
-  \entry{abdul-baha_paris_nodate}{book}{}
-    \name{author}{1}{}{%
-      {{hash=AB}{%
-         family={'Abdu'l-Bahá},
-         familyi={A\bibinitperiod-B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AB1}
-    \strng{fullhash}{AB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Paris Talks}
-    \verb{url}
-    \verb https://www.bahai.org/library/authoritative-texts/abdul-baha/paris-ta
-    \verb lks/
-    \endverb
-  \endentry
-
-  \entry{abdul-baha_promulgation_1982}{book}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{'Abdu'l-Bahá}},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{US} Bahá’í Publishing Trust}%
-    }
-    \strng{namehash}{A2}
-    \strng{fullhash}{A2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pagetotal}{470}
-    \field{title}{The Promulgation of Universal Peace}
-    \field{volume}{1}
-    \field{year}{1982}
-  \endentry
-
-  \entry{abd_al-hadi_hairi_shiism_1977}{book}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={{Abd al-Hādī Ḥāʼirī}},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {E.J. Brill}%
-    }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Shīʿīsm and Constitutionalism in Iran: A Study of the Role
-  Played by the Persian Residents of Iraq in Iranian Politics}
-    \list{location}{1}{%
-      {Leiden}%
-    }
-    \verb{file}
-    \verb Shīʿīsm and Constitutionalism in Iran\: A Study of the Role Played
-    \verb  by the ... - ʻAbd al-Hādī Ḥāʼirī - Google Books:/Users/jtim/
-    \verb Zotero/storage/QBZ9YPRB/books.html:text/html
-    \endverb
-    \field{year}{1977}
-  \endentry
-
-  \entry{lawson_todd_globalization_2005}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=L}{%
-         family={{Lawson, Todd}},
-         familyi={L\bibinitperiod},
-      }}%
-    }
-    \name{editor}{3}{}{%
-      {{hash=W}{%
-         family={{Warburg, Margit}},
-         familyi={W\bibinitperiod},
-      }}%
-      {{hash=H}{%
-         family={{Hvithamar, Annika}},
-         familyi={H\bibinitperiod},
-      }}%
-      {{hash=W}{%
-         family={{Warmind, Morten}},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Aarhus University Press}%
-    }
-    \strng{namehash}{L1}
-    \strng{fullhash}{L1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Bahá'í and Globalization}
-    \field{pages}{35\bibrangedash 53}
-    \field{title}{Globalization and the Hidden Words}
-    \list{location}{1}{%
-      {Denmark}%
-    }
-    \verb{file}
-    \verb lawson_globalization_hidden-words.pdf:/Users/jtim/Zotero/storage/C8FN
-    \verb QVHX/lawson_globalization_hidden-words.pdf:application/pdf
-    \endverb
-    \field{year}{2005}
-  \endentry
-
   \entry{gail_world_1978}{article}{}
     \name{author}{1}{}{%
       {{hash=GM}{%
@@ -953,6 +874,47 @@
     \field{labeltitlesource}{title}
     \field{title}{Muntakhabati-az Asar-i-Hadrat-i-Bahá'u'lláh}
     \field{year}{0163}
+  \endentry
+
+  \entry{lawson_todd_globalization_2005}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Lawson, Todd}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=W}{%
+         family={{Warburg, Margit}},
+         familyi={W\bibinitperiod},
+      }}%
+      {{hash=H}{%
+         family={{Hvithamar, Annika}},
+         familyi={H\bibinitperiod},
+      }}%
+      {{hash=W}{%
+         family={{Warmind, Morten}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Aarhus University Press}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Bahá'í and Globalization}
+    \field{pages}{35\bibrangedash 53}
+    \field{title}{Globalization and the Hidden Words}
+    \list{location}{1}{%
+      {Denmark}%
+    }
+    \verb{file}
+    \verb lawson_globalization_hidden-words.pdf:/Users/jtim/Zotero/storage/C8FN
+    \verb QVHX/lawson_globalization_hidden-words.pdf:application/pdf
+    \endverb
+    \field{year}{2005}
   \endentry
 \enddatalist
 \endinput
