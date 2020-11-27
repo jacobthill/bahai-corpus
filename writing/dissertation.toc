@@ -6,20 +6,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}The Linguistic Setting}{3}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The ``Raw'' Data}{4}{section.3.1}
+\contentsline {section}{\numberline {3.1}The ``Raw'' Data}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Side Effects of Text Encoding}{6}{section.3.2}
+\contentsline {section}{\numberline {3.2}Side Effects of Text Encoding}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Measures of Linguistic Style}{10}{section.3.3}
+\contentsline {section}{\numberline {3.3}Peculiarities of Language and Literary Products}{11}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Measures of Linguistic Range}{21}{section.3.4}
+\contentsline {section}{\numberline {3.4}Measures of Linguistic Range}{17}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusion}{24}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{27}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Word Embeddings}{26}{chapter.4}
+\contentsline {chapter}{\numberline {4}Word Embeddings}{28}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{29}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{28}{chapter.5}
+\contentsline {chapter}{Appendices}{30}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{28}{appendix*.12}
+\contentsline {section}{Appendix A: Bah\'{a}'\'{i} Published Volumes}{30}{appendix*.12}
